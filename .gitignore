@@ -4,3 +4,7 @@
 */restart
 */work
 restart_*
+scripts/out_*
+scripts/r_*
+scripts/*.post.*
+

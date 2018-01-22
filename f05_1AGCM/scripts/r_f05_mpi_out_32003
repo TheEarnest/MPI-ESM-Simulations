@@ -1600,3 +1600,1572 @@ save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_2050
 + [ -r f05_1AGCM_205007.01_hd_higres.nc ]
 + calc_date plus -c1 -M1 -- 20500701
 + save_file echam6 output f05_1AGCM_205007.01_echam f05_1AGCM_echam6_echam_205007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205007.grb
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [ -r f05_1AGCM_205008.01_echam ]
++ [ -r f05_1AGCM_205008.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file echam6 output f05_1AGCM_205008.01_echam f05_1AGCM_echam6_echam_205008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205008.grb
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [ -r f05_1AGCM_205009.01_echam ]
++ [ -r f05_1AGCM_205009.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file echam6 output f05_1AGCM_205009.01_echam f05_1AGCM_echam6_echam_205009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205009.grb
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [ -r f05_1AGCM_205010.01_echam ]
++ [ -r f05_1AGCM_205010.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file echam6 output f05_1AGCM_205010.01_echam f05_1AGCM_echam6_echam_205010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205010.grb
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [ -r f05_1AGCM_205011.01_echam ]
++ [ -r f05_1AGCM_205011.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file echam6 output f05_1AGCM_205011.01_echam f05_1AGCM_echam6_echam_205011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205011.grb
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [ -r f05_1AGCM_205012.01_echam ]
++ [ -r f05_1AGCM_205012.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file echam6 output f05_1AGCM_205012.01_echam f05_1AGCM_echam6_echam_205012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205012.grb
++ date=20510101
++ later_date -- 20510101 20501231
++ [[ 20510101 == 20501231 ]]
++ [[ 116 == 1 ]]
++ [[ -r rerun_f05_1AGCM_echam ]]
++ date=20500101
++ later_date -- 20500101 20501231
++ save_file echam6 restart rerun_f05_1AGCM_echam rerun_f05_1AGCM_echam_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/echam6/rerun_f05_1AGCM_echam_20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [ -r f05_1AGCM_205001.01_co2 ]
++ [ -r f05_1AGCM_205001.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file echam6 output f05_1AGCM_205001.01_co2 f05_1AGCM_echam6_co2_205001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205001.grb
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [ -r f05_1AGCM_205002.01_co2 ]
++ [ -r f05_1AGCM_205002.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file echam6 output f05_1AGCM_205002.01_co2 f05_1AGCM_echam6_co2_205002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205002.grb
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [ -r f05_1AGCM_205003.01_co2 ]
++ [ -r f05_1AGCM_205003.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file echam6 output f05_1AGCM_205003.01_co2 f05_1AGCM_echam6_co2_205003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205003.grb
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [ -r f05_1AGCM_205004.01_co2 ]
++ [ -r f05_1AGCM_205004.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file echam6 output f05_1AGCM_205004.01_co2 f05_1AGCM_echam6_co2_205004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205004.grb
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [ -r f05_1AGCM_205005.01_co2 ]
++ [ -r f05_1AGCM_205005.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file echam6 output f05_1AGCM_205005.01_co2 f05_1AGCM_echam6_co2_205005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205005.grb
++ date=20500601
++ later_date -- 20500601 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [ -r f05_1AGCM_205006.01_co2 ]
++ [ -r f05_1AGCM_205006.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file echam6 output f05_1AGCM_205006.01_co2 f05_1AGCM_echam6_co2_205006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205006.grb
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [ -r f05_1AGCM_205007.01_co2 ]
++ [ -r f05_1AGCM_205007.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file echam6 output f05_1AGCM_205007.01_co2 f05_1AGCM_echam6_co2_205007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205007.grb
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [ -r f05_1AGCM_205008.01_co2 ]
++ [ -r f05_1AGCM_205008.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file echam6 output f05_1AGCM_205008.01_co2 f05_1AGCM_echam6_co2_205008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205008.grb
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [ -r f05_1AGCM_205009.01_co2 ]
++ [ -r f05_1AGCM_205009.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file echam6 output f05_1AGCM_205009.01_co2 f05_1AGCM_echam6_co2_205009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205009.grb
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [ -r f05_1AGCM_205010.01_co2 ]
++ [ -r f05_1AGCM_205010.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file echam6 output f05_1AGCM_205010.01_co2 f05_1AGCM_echam6_co2_205010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205010.grb
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [ -r f05_1AGCM_205011.01_co2 ]
++ [ -r f05_1AGCM_205011.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file echam6 output f05_1AGCM_205011.01_co2 f05_1AGCM_echam6_co2_205011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205011.grb
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [ -r f05_1AGCM_205012.01_co2 ]
++ [ -r f05_1AGCM_205012.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file echam6 output f05_1AGCM_205012.01_co2 f05_1AGCM_echam6_co2_205012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_co2_205012.grb
++ date=20510101
++ later_date -- 20510101 20501231
++ [[ 20510101 == 20501231 ]]
++ [[ 116 == 1 ]]
++ [[ -r rerun_f05_1AGCM_co2 ]]
++ [[ false == true ]]
++ [[ false == T ]]
++ date=20500101
++ later_date -- 20500101 20501231
++ save_file echam6 restart rerun_f05_1AGCM_co2 rerun_f05_1AGCM_co2_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/echam6/rerun_f05_1AGCM_co2_20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [[ -r f05_1AGCM_205001.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file echam6 output f05_1AGCM_205001.01_trdiag.nc f05_1AGCM_echam6_trdiag_205001.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205001.nc
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [[ -r f05_1AGCM_205002.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file echam6 output f05_1AGCM_205002.01_trdiag.nc f05_1AGCM_echam6_trdiag_205002.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205002.nc
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [[ -r f05_1AGCM_205003.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file echam6 output f05_1AGCM_205003.01_trdiag.nc f05_1AGCM_echam6_trdiag_205003.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205003.nc
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [[ -r f05_1AGCM_205004.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file echam6 output f05_1AGCM_205004.01_trdiag.nc f05_1AGCM_echam6_trdiag_205004.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205004.nc
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [[ -r f05_1AGCM_205005.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file echam6 output f05_1AGCM_205005.01_trdiag.nc f05_1AGCM_echam6_trdiag_205005.nc
++ date=20500601
++ later_date -- 20500601 20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205005.nc
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [[ -r f05_1AGCM_205006.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file echam6 output f05_1AGCM_205006.01_trdiag.nc f05_1AGCM_echam6_trdiag_205006.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205006.nc
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [[ -r f05_1AGCM_205007.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file echam6 output f05_1AGCM_205007.01_trdiag.nc f05_1AGCM_echam6_trdiag_205007.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205007.nc
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [[ -r f05_1AGCM_205008.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file echam6 output f05_1AGCM_205008.01_trdiag.nc f05_1AGCM_echam6_trdiag_205008.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205008.nc
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [[ -r f05_1AGCM_205009.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file echam6 output f05_1AGCM_205009.01_trdiag.nc f05_1AGCM_echam6_trdiag_205009.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205009.nc
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [[ -r f05_1AGCM_205010.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file echam6 output f05_1AGCM_205010.01_trdiag.nc f05_1AGCM_echam6_trdiag_205010.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205010.nc
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [[ -r f05_1AGCM_205011.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file echam6 output f05_1AGCM_205011.01_trdiag.nc f05_1AGCM_echam6_trdiag_205011.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205011.nc
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [[ -r f05_1AGCM_205012.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file echam6 output f05_1AGCM_205012.01_trdiag.nc f05_1AGCM_echam6_trdiag_205012.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_trdiag_205012.nc
++ date=20510101
++ later_date -- 20510101 20501231
++ [[ 20510101 == 20501231 ]]
++ [[ true == true ]]
++ [[ -r atmout ]]
++ [[ false == T ]]
++ [ true '=' true ]
++ [[ -r hdrestart.nc ]]
++ wait
++ save_file echam6 log atmout f05_1AGCM_echam6_atmout_20500101_20501231
++ save_file echam6 restart hdrestart.nc rerun_f05_1AGCM_hd_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/hdrestart.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/echam6/rerun_f05_1AGCM_hd_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/atmout >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/log/f05_1AGCM_echam6_atmout_20500101_20501231
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save JSBACH output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save JSBACH output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ suff=.grb
++ [[ 0 == 1 ]]
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work
++ wait
++ SAVE_status=0
++ substreams='jsbach land veg surf'
++ [ 116 '=' 1 ]
++ substreams='jsbach land veg surf'
++ [[ jsbach == jsbach ]]
++ datastream=f05_1AGCM_jsbach
++ date=20500101
++ later_date -- 20500101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [ -r f05_1AGCM_205001.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file jsbach output f05_1AGCM_205001.01_jsbach f05_1AGCM_jsbach_205001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205001.grb
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [ -r f05_1AGCM_205002.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file jsbach output f05_1AGCM_205002.01_jsbach f05_1AGCM_jsbach_205002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205002.grb
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [ -r f05_1AGCM_205003.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file jsbach output f05_1AGCM_205003.01_jsbach f05_1AGCM_jsbach_205003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205003.grb
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [ -r f05_1AGCM_205004.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file jsbach output f05_1AGCM_205004.01_jsbach f05_1AGCM_jsbach_205004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205004.grb
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [ -r f05_1AGCM_205005.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file jsbach output f05_1AGCM_205005.01_jsbach f05_1AGCM_jsbach_205005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205005.grb
++ date=20500601
++ later_date -- 20500601 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [ -r f05_1AGCM_205006.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file jsbach output f05_1AGCM_205006.01_jsbach f05_1AGCM_jsbach_205006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205006.grb
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [ -r f05_1AGCM_205007.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file jsbach output f05_1AGCM_205007.01_jsbach f05_1AGCM_jsbach_205007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205007.grb
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [ -r f05_1AGCM_205008.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file jsbach output f05_1AGCM_205008.01_jsbach f05_1AGCM_jsbach_205008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205008.grb
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [ -r f05_1AGCM_205009.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file jsbach output f05_1AGCM_205009.01_jsbach f05_1AGCM_jsbach_205009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205009.grb
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [ -r f05_1AGCM_205010.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file jsbach output f05_1AGCM_205010.01_jsbach f05_1AGCM_jsbach_205010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205010.grb
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [ -r f05_1AGCM_205011.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file jsbach output f05_1AGCM_205011.01_jsbach f05_1AGCM_jsbach_205011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205011.grb
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [ -r f05_1AGCM_205012.01_jsbach ]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file jsbach output f05_1AGCM_205012.01_jsbach f05_1AGCM_jsbach_205012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_205012.grb
++ date=20510101
++ later_date -- 20510101 20501231
++ [[ 20510101 == 20501231 ]]
++ [[ jsbach == land ]]
++ [ -r rerun_f05_1AGCM_jsbach ]
++ [[ land == jsbach ]]
++ datastream=f05_1AGCM_jsbach_land
++ date=20500101
++ later_date -- 20500101 20501231
++ save_file jsbach restart rerun_f05_1AGCM_jsbach rerun_f05_1AGCM_jsbach_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/jsbach/rerun_f05_1AGCM_jsbach_20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [ -r f05_1AGCM_205001.01_land ]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file jsbach output f05_1AGCM_205001.01_land f05_1AGCM_jsbach_land_205001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205001.grb
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [ -r f05_1AGCM_205002.01_land ]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file jsbach output f05_1AGCM_205002.01_land f05_1AGCM_jsbach_land_205002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205002.grb
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [ -r f05_1AGCM_205003.01_land ]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file jsbach output f05_1AGCM_205003.01_land f05_1AGCM_jsbach_land_205003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205003.grb
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [ -r f05_1AGCM_205004.01_land ]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file jsbach output f05_1AGCM_205004.01_land f05_1AGCM_jsbach_land_205004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205004.grb
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [ -r f05_1AGCM_205005.01_land ]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file jsbach output f05_1AGCM_205005.01_land f05_1AGCM_jsbach_land_205005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205005.grb
++ date=20500601
++ later_date -- 20500601 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [ -r f05_1AGCM_205006.01_land ]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file jsbach output f05_1AGCM_205006.01_land f05_1AGCM_jsbach_land_205006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205006.grb
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [ -r f05_1AGCM_205007.01_land ]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file jsbach output f05_1AGCM_205007.01_land f05_1AGCM_jsbach_land_205007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205007.grb
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [ -r f05_1AGCM_205008.01_land ]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file jsbach output f05_1AGCM_205008.01_land f05_1AGCM_jsbach_land_205008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205008.grb
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [ -r f05_1AGCM_205009.01_land ]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file jsbach output f05_1AGCM_205009.01_land f05_1AGCM_jsbach_land_205009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205009.grb
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [ -r f05_1AGCM_205010.01_land ]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file jsbach output f05_1AGCM_205010.01_land f05_1AGCM_jsbach_land_205010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205010.grb
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [ -r f05_1AGCM_205011.01_land ]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file jsbach output f05_1AGCM_205011.01_land f05_1AGCM_jsbach_land_205011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205011.grb
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [ -r f05_1AGCM_205012.01_land ]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file jsbach output f05_1AGCM_205012.01_land f05_1AGCM_jsbach_land_205012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_land_205012.grb
++ date=20510101
++ later_date -- 20510101 20501231
++ [[ 20510101 == 20501231 ]]
++ [[ land == land ]]
++ [[ veg == jsbach ]]
++ datastream=f05_1AGCM_jsbach_veg
++ date=20500101
++ later_date -- 20500101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [ -r f05_1AGCM_205001.01_veg ]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file jsbach output f05_1AGCM_205001.01_veg f05_1AGCM_jsbach_veg_205001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205001.grb
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [ -r f05_1AGCM_205002.01_veg ]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file jsbach output f05_1AGCM_205002.01_veg f05_1AGCM_jsbach_veg_205002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205002.grb
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [ -r f05_1AGCM_205003.01_veg ]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file jsbach output f05_1AGCM_205003.01_veg f05_1AGCM_jsbach_veg_205003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205003.grb
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [ -r f05_1AGCM_205004.01_veg ]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file jsbach output f05_1AGCM_205004.01_veg f05_1AGCM_jsbach_veg_205004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205004.grb
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [ -r f05_1AGCM_205005.01_veg ]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file jsbach output f05_1AGCM_205005.01_veg f05_1AGCM_jsbach_veg_205005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205005.grb
++ date=20500601
++ later_date -- 20500601 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [ -r f05_1AGCM_205006.01_veg ]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file jsbach output f05_1AGCM_205006.01_veg f05_1AGCM_jsbach_veg_205006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205006.grb
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [ -r f05_1AGCM_205007.01_veg ]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file jsbach output f05_1AGCM_205007.01_veg f05_1AGCM_jsbach_veg_205007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205007.grb
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [ -r f05_1AGCM_205008.01_veg ]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file jsbach output f05_1AGCM_205008.01_veg f05_1AGCM_jsbach_veg_205008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205008.grb
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [ -r f05_1AGCM_205009.01_veg ]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file jsbach output f05_1AGCM_205009.01_veg f05_1AGCM_jsbach_veg_205009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205009.grb
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [ -r f05_1AGCM_205010.01_veg ]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file jsbach output f05_1AGCM_205010.01_veg f05_1AGCM_jsbach_veg_205010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205010.grb
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [ -r f05_1AGCM_205011.01_veg ]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file jsbach output f05_1AGCM_205011.01_veg f05_1AGCM_jsbach_veg_205011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205011.grb
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [ -r f05_1AGCM_205012.01_veg ]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file jsbach output f05_1AGCM_205012.01_veg f05_1AGCM_jsbach_veg_205012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_veg_205012.grb
++ date=20510101
++ later_date -- 20510101 20501231
++ [[ 20510101 == 20501231 ]]
++ [[ veg == land ]]
++ [ -r rerun_f05_1AGCM_veg ]
++ [[ surf == jsbach ]]
++ datastream=f05_1AGCM_jsbach_surf
++ date=20500101
++ later_date -- 20500101 20501231
++ save_file jsbach restart rerun_f05_1AGCM_veg rerun_f05_1AGCM_veg_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_veg >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/jsbach/rerun_f05_1AGCM_veg_20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [ -r f05_1AGCM_205001.01_surf ]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file jsbach output f05_1AGCM_205001.01_surf f05_1AGCM_jsbach_surf_205001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205001.grb
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [ -r f05_1AGCM_205002.01_surf ]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file jsbach output f05_1AGCM_205002.01_surf f05_1AGCM_jsbach_surf_205002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205002.grb
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [ -r f05_1AGCM_205003.01_surf ]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file jsbach output f05_1AGCM_205003.01_surf f05_1AGCM_jsbach_surf_205003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205003.grb
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [ -r f05_1AGCM_205004.01_surf ]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file jsbach output f05_1AGCM_205004.01_surf f05_1AGCM_jsbach_surf_205004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205004.grb
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [ -r f05_1AGCM_205005.01_surf ]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file jsbach output f05_1AGCM_205005.01_surf f05_1AGCM_jsbach_surf_205005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205005.grb
++ date=20500601
++ later_date -- 20500601 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [ -r f05_1AGCM_205006.01_surf ]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file jsbach output f05_1AGCM_205006.01_surf f05_1AGCM_jsbach_surf_205006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205006.grb
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [ -r f05_1AGCM_205007.01_surf ]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file jsbach output f05_1AGCM_205007.01_surf f05_1AGCM_jsbach_surf_205007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205007.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205007.grb
++ date=20500801
++ later_date -- 20500801 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500801
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 20500801
++ cut -f3 '-d '
++ day=01
++ ym=205008
++ [ -r f05_1AGCM_205008.01_surf ]
++ calc_date plus -c1 -M1 -- 20500801
++ save_file jsbach output f05_1AGCM_205008.01_surf f05_1AGCM_jsbach_surf_205008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205008.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205008.grb
++ date=20500901
++ later_date -- 20500901 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500901
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 20500901
++ cut -f3 '-d '
++ day=01
++ ym=205009
++ [ -r f05_1AGCM_205009.01_surf ]
++ calc_date plus -c1 -M1 -- 20500901
++ save_file jsbach output f05_1AGCM_205009.01_surf f05_1AGCM_jsbach_surf_205009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205009.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205009.grb
++ date=20501001
++ later_date -- 20501001 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501001
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 20501001
++ cut -f3 '-d '
++ day=01
++ ym=205010
++ [ -r f05_1AGCM_205010.01_surf ]
++ calc_date plus -c1 -M1 -- 20501001
++ save_file jsbach output f05_1AGCM_205010.01_surf f05_1AGCM_jsbach_surf_205010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205010.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205010.grb
++ date=20501101
++ later_date -- 20501101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 20501101
++ cut -f3 '-d '
++ day=01
++ ym=205011
++ [ -r f05_1AGCM_205011.01_surf ]
++ calc_date plus -c1 -M1 -- 20501101
++ save_file jsbach output f05_1AGCM_205011.01_surf f05_1AGCM_jsbach_surf_205011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205011.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205011.grb
++ date=20501201
++ later_date -- 20501201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20501201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20501201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 20501201
++ cut -f3 '-d '
++ day=01
++ ym=205012
++ [ -r f05_1AGCM_205012.01_surf ]
++ calc_date plus -c1 -M1 -- 20501201
++ save_file jsbach output f05_1AGCM_205012.01_surf f05_1AGCM_jsbach_surf_205012.grb
++ date=20510101
++ later_date -- 20510101 20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205012.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/jsbach/f05_1AGCM_jsbach_surf_205012.grb
++ [[ 20510101 == 20501231 ]]
++ [[ surf == land ]]
++ [ -r rerun_f05_1AGCM_surf ]
++ wait
++ save_file jsbach restart rerun_f05_1AGCM_surf rerun_f05_1AGCM_surf_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_surf >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/jsbach/rerun_f05_1AGCM_surf_20501231
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save MPIOM output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save MPIOM output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ suff=.nc
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work
++ wait
++ SAVE_status=0
++ outfile=f05_1AGCM_mpiom_timeser_dm.nc
++ outfile_save=f05_1AGCM_mpiom_timeser_dm_20500101_20501231.nc
++ [ -r f05_1AGCM_mpiom_timeser_dm.nc ]
++ outfile=f05_1AGCM_mpiom_monitoring_ym.nc
++ outfile_save=f05_1AGCM_mpiom_monitoring_ym_20500101_20501231.nc
++ [ -r f05_1AGCM_mpiom_monitoring_ym.nc ]
++ substreams='data_2d_mm data_3du_mm data_3dw_mm data_2d_dm'
++ outfile=f05_1AGCM_mpiom_data_2d_mm.nc
++ outfile_save=f05_1AGCM_mpiom_data_2d_mm_20500101_20501231.nc
++ [ -r f05_1AGCM_mpiom_data_2d_mm.nc ]
++ save_file mpiom output f05_1AGCM_mpiom_timeser_dm.nc f05_1AGCM_mpiom_timeser_dm_20500101_20501231.nc
++ outfile=f05_1AGCM_mpiom_data_3du_mm.nc
++ outfile_save=f05_1AGCM_mpiom_data_3du_mm_20500101_20501231.nc
++ [ -r f05_1AGCM_mpiom_data_3du_mm.nc ]
++ save_file mpiom output f05_1AGCM_mpiom_monitoring_ym.nc f05_1AGCM_mpiom_monitoring_ym_20500101_20501231.nc
++ outfile=f05_1AGCM_mpiom_data_3dw_mm.nc
++ outfile_save=f05_1AGCM_mpiom_data_3dw_mm_20500101_20501231.nc
++ [ -r f05_1AGCM_mpiom_data_3dw_mm.nc ]
++ save_file mpiom output f05_1AGCM_mpiom_data_2d_mm.nc f05_1AGCM_mpiom_data_2d_mm_20500101_20501231.nc
++ outfile=f05_1AGCM_mpiom_data_2d_dm.nc
++ outfile_save=f05_1AGCM_mpiom_data_2d_dm_20500101_20501231.nc
++ [ -r f05_1AGCM_mpiom_data_2d_dm.nc ]
++ save_file mpiom output f05_1AGCM_mpiom_data_3du_mm.nc f05_1AGCM_mpiom_data_3du_mm_20500101_20501231.nc
++ [[ -r rerun_f05_1AGCM_mpiom.nc ]]
++ save_file mpiom output f05_1AGCM_mpiom_data_3dw_mm.nc f05_1AGCM_mpiom_data_3dw_mm_20500101_20501231.nc
++ [[ -r oceout ]]
++ save_file mpiom output f05_1AGCM_mpiom_data_2d_dm.nc f05_1AGCM_mpiom_data_2d_dm_20500101_20501231.nc
++ [[ 116 == 0 ]]
++ wait
++ save_file mpiom restart rerun_f05_1AGCM_mpiom.nc rerun_f05_1AGCM_mpiom_20501231.nc
++ save_file mpiom log oceout f05_1AGCM_mpiom_oceout_20500101_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_mpiom.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/mpiom/rerun_f05_1AGCM_mpiom_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/oceout >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/log/f05_1AGCM_mpiom_oceout_20500101_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_mpiom_timeser_dm.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/mpiom/f05_1AGCM_mpiom_timeser_dm_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_mpiom_monitoring_ym.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/mpiom/f05_1AGCM_mpiom_monitoring_ym_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_mpiom_data_2d_mm.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/mpiom/f05_1AGCM_mpiom_data_2d_mm_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_mpiom_data_3dw_mm.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/mpiom/f05_1AGCM_mpiom_data_3dw_mm_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_mpiom_data_3du_mm.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/mpiom/f05_1AGCM_mpiom_data_3du_mm_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_mpiom_data_2d_dm.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/mpiom/f05_1AGCM_mpiom_data_2d_dm_20500101_20501231.nc
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save HAMOCC output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save HAMOCC output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work
++ wait
++ SAVE_status=0
++ outfile=f05_1AGCM_hamocc_co2.nc
++ outfile_save=f05_1AGCM_hamocc_ico2_20500101_20501231.nc
++ [ -r f05_1AGCM_hamocc_co2.nc ]
++ substreams=data_2d_mm
++ outfile=f05_1AGCM_hamocc_data_2d_mm.nc
++ outfile_save=f05_1AGCM_hamocc_data_2d_mm_20500101_20501231.nc
++ [ -r f05_1AGCM_hamocc_data_2d_mm.nc ]
++ outfile=f05_1AGCM_hamocc_monitoring_ym.nc
++ outfile_save=f05_1AGCM_hamocc_monitoring_ym_20500101_20501231.nc
++ [ -r f05_1AGCM_hamocc_monitoring_ym.nc ]
++ save_file hamocc output f05_1AGCM_hamocc_co2.nc f05_1AGCM_hamocc_ico2_20500101_20501231.nc
++ save_file hamocc output f05_1AGCM_hamocc_data_2d_mm.nc f05_1AGCM_hamocc_data_2d_mm_20500101_20501231.nc
++ outfile=rerun_f05_1AGCM_hamocc.nc
++ outfile_save=rerun_f05_1AGCM_hamocc_20501231.nc
++ [[ -r rerun_f05_1AGCM_hamocc.nc ]]
++ [[ -r bgcout ]]
++ save_file hamocc output f05_1AGCM_hamocc_monitoring_ym.nc f05_1AGCM_hamocc_monitoring_ym_20500101_20501231.nc
++ [[ 116 == 0 ]]
++ wait
++ save_file hamocc restart rerun_f05_1AGCM_hamocc.nc rerun_f05_1AGCM_hamocc_20501231.nc
++ save_file hamocc log bgcout f05_1AGCM_hamocc_bgcout_20500101_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/bgcout >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/log/f05_1AGCM_hamocc_bgcout_20500101_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/rerun_f05_1AGCM_hamocc.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/hamocc/rerun_f05_1AGCM_hamocc_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_hamocc_monitoring_ym.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/hamocc/f05_1AGCM_hamocc_monitoring_ym_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_hamocc_data_2d_mm.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/hamocc/f05_1AGCM_hamocc_data_2d_mm_20500101_20501231.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_hamocc_co2.nc >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/hamocc/f05_1AGCM_hamocc_ico2_20500101_20501231.nc
++ format_date -f4 -- 20510101
++ cut -f1 '-d '
++ year=2051
++ [[ no == no ]]
++ [[ 0 == 0 ]]
++ printf '\n    |+ The model integration run finished successfully\n'
+
+    |+ The model integration run finished successfully
++ [[ 0 == 0 ]]
++ printf '\n    |+ All existing output files have been saved.\n'
+
+    |+ All existing output files have been saved.
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts
++ (( nextjob = 116 + 1 ))
++ space_error=no
++ echo '20510101 117'
++ 1> f05_1AGCM.date.new
++ cp f05_1AGCM.log f05_1AGCM.log.new
++ date '+%a %b %d %H:%M:%S %Z %Y'
++ echo 'Mon Jan 22 14:24:37 CET 2018 :  116 20510101 f05_1AGCM  - done'
++ 1>> f05_1AGCM.log.new
++ [ no '=' no ]
++ mv f05_1AGCM.date.new f05_1AGCM.date
++ mv f05_1AGCM.log.new f05_1AGCM.log
++ [[ no == no ]]
++ later_date -- 20510101 24001231
++ [[ 24001231 == 20510101 ]]
++ sbatch f05_1AGCM.run
+Submitted batch job 32026
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts
++ [ post '=' post ]
++ [ -e /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts/.lock_postprocessing ]
++ echo skip post
+skip post
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts
++ [ mon '=' post ]
++ [ mon '=' arch ]
++ echo 'skip mon'
+skip mon
++ wait
++ date '+%b %d %T'
++ hostname
++ printf '\n%s\t%s\n' ' End of script at ' 'Jan 22 14:24:37 on c12-3'
+
+ End of script at 	Jan 22 14:24:37 on c12-3
++ exit
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+32003           f05_mpi        320                                             00:37:45      0:0 
+32003.batch       batch         32        1   00:00:02          0   00:00:00   00:37:45      0:0 
+32003.0        mpmd.lst        320      320   00:35:56        151   00:36:06   00:36:12      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+32003                                                                            
+32003.batch       7931K          0      2745K      13K              0        13K 
+32003.0            850M        144  89452.79K      23K            193      7.46K 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+32003                                                                                                 
+32003.batch      1116.01M               0       1116.01M     1055.98M                0       1055.98M 
+32003.0          1205.86M             144          7.84M    11784.98M              144         48.51M 
+
+Job 32003 completed at Mon Jan 22 14:24:39 CET 2018

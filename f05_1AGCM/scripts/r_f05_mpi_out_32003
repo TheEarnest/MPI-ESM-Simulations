@@ -1395,3 +1395,208 @@ no old log files.
 + paffopt=--multi-prog
 + /usr/bin/srun --multi-prog mpmd.lst
 + 1> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts/out_f05_1AGCM_log_180122_134705 2> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts/out_f05_1AGCM_err_180122_134705
+
+real	36m12.08s
+user	0m0.49s
+sys	0m1.60s
++ date
++ print '\n |-------------------------------|\n |- Mon Jan 22 14:23:18 CET 2018 |'
+
+ |-------------------------------|
+ |- Mon Jan 22 14:23:18 CET 2018 |
++ print ' |- Model integration completed  |\n |-------------------------------|\n'
+ |- Model integration completed  |
+ |-------------------------------|
+
++ [[ -s ERROR.ctl ]]
++ [ -f '*.mpiom' ]
++ [ -f '*.echam6' ]
++ [ -f '*.oasis.x' ]
++ calc_date minus -c1 -D1 -- 20510101
++ enddate=20501231
++ calc_date minus -c1 -D1 -- 20500101
++ prevdate=20491231
++ cut -f1 '-d '
++ format_date -f4 -- 20500101
++ startyear=2050
++ format_date -f4 -- 20491231
++ cut -f1 '-d '
++ prevyear=2049
++ prevdecade=204
++ [[ -r /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts/f05_1AGCM.log ]]
++ get_logpid -d 20500101 -f /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/scripts/f05_1AGCM.log
++ loginfo='f05_1AGCM 20500101'
++ [[ -n 'f05_1AGCM 20500101' ]]
++ previd=f05_1AGCM
++ prevstart=20500101
++ wait
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save OASIS3 output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save OASIS3 output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work
++ wait
++ SAVE_status=0
++ ls '????????_out.????-??-??T??:??:??.nc'
++ 2> /dev/null
++ files=''
++ files=''
++ ls cplout_0 Oasis.prt0
++ 2> /dev/null
++ files=$'cplout_0\nOasis.prt0'
++ status=0
++ tar -cf sstocean_f05_1AGCM_20501231.tar sstoce1 sstoce2 sstoce3 sstoce4 sstoce5 sstoce6 sstoce7 sstoce8
++ save_file oasis3 log cplout_0 cplout_0_20501231
++ save_file oasis3 log Oasis.prt0 Oasis.prt0_20501231
++ [[ 0 == 1 ]]
++ save_file oasis3 restart sstocean_f05_1AGCM_20501231.tar
++ status=0
++ tar -cf flxatmos_f05_1AGCM_20501231.tar flxatm11 flxatm13 flxatm15 flxatm17 flxatm18 flxatm19 flxatm20 flxatm21 flxatm22 flxatm23 flxatm24 flxatm25 flxatm9
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/cplout_0 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/log/cplout_0_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/Oasis.prt0 >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/log/Oasis.prt0_20501231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/sstocean_f05_1AGCM_20501231.tar >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/oasis3/sstocean_f05_1AGCM_20501231.tar
++ [[ 0 == 1 ]]
++ wait
++ save_file oasis3 restart flxatmos_f05_1AGCM_20501231.tar
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/flxatmos_f05_1AGCM_20501231.tar >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/restart/oasis3/flxatmos_f05_1AGCM_20501231.tar
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save ECHAM output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save ECHAM output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ suff=.grb
++ [[ 0 == 1 ]]
++ cd /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work
++ wait
++ SAVE_status=0
++ substreams='echam co2'
++ [[ false == true ]]
++ [[ false == true ]]
++ date=20500101
++ later_date -- 20500101 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500101
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 20500101
++ cut -f3 '-d '
++ day=01
++ ym=205001
++ [ -r f05_1AGCM_205001.01_echam ]
++ [ -r f05_1AGCM_205001.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500101
++ save_file echam6 output f05_1AGCM_205001.01_echam f05_1AGCM_echam6_echam_205001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205001.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205001.grb
++ date=20500201
++ later_date -- 20500201 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500201
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 20500201
++ cut -f3 '-d '
++ day=01
++ ym=205002
++ [ -r f05_1AGCM_205002.01_echam ]
++ [ -r f05_1AGCM_205002.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500201
++ save_file echam6 output f05_1AGCM_205002.01_echam f05_1AGCM_echam6_echam_205002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205002.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205002.grb
++ date=20500301
++ later_date -- 20500301 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500301
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 20500301
++ cut -f3 '-d '
++ day=01
++ ym=205003
++ [ -r f05_1AGCM_205003.01_echam ]
++ [ -r f05_1AGCM_205003.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500301
++ save_file echam6 output f05_1AGCM_205003.01_echam f05_1AGCM_echam6_echam_205003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205003.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205003.grb
++ date=20500401
++ later_date -- 20500401 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500401
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 20500401
++ cut -f3 '-d '
++ day=01
++ ym=205004
++ [ -r f05_1AGCM_205004.01_echam ]
++ [ -r f05_1AGCM_205004.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500401
++ save_file echam6 output f05_1AGCM_205004.01_echam f05_1AGCM_echam6_echam_205004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205004.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205004.grb
++ date=20500501
++ later_date -- 20500501 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500501
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 20500501
++ cut -f3 '-d '
++ day=01
++ ym=205005
++ [ -r f05_1AGCM_205005.01_echam ]
++ [ -r f05_1AGCM_205005.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500501
++ save_file echam6 output f05_1AGCM_205005.01_echam f05_1AGCM_echam6_echam_205005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205005.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205005.grb
++ date=20500601
++ later_date -- 20500601 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500601
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 20500601
++ cut -f3 '-d '
++ day=01
++ ym=205006
++ [ -r f05_1AGCM_205006.01_echam ]
++ [ -r f05_1AGCM_205006.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500601
++ save_file echam6 output f05_1AGCM_205006.01_echam f05_1AGCM_echam6_echam_205006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/work/f05_1AGCM_205006.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f05_1AGCM/outdata/echam6/f05_1AGCM_echam6_echam_205006.grb
++ date=20500701
++ later_date -- 20500701 20501231
++ [[ 20501231 == 20501231 ]]
++ format_date -f4 -- 20500701
++ cut -f1 '-d '
++ year=2050
++ format_date -f4 -- 20500701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 20500701
++ cut -f3 '-d '
++ day=01
++ ym=205007
++ [ -r f05_1AGCM_205007.01_echam ]
++ [ -r f05_1AGCM_205007.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 20500701
++ save_file echam6 output f05_1AGCM_205007.01_echam f05_1AGCM_echam6_echam_205007.grb

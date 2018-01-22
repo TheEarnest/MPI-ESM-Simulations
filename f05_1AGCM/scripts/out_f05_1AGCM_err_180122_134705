@@ -18768,3 +18768,473 @@ Debug: opening for writing once: ('rerun_f05_1AGCM_mpiom.nc','nc4',snapshot,unma
  Interrupt model, last prognostic date/time is: 31. Dec     2050 23:50:00
  hydrology_model: P-E residual difference is    2590.38449924579       m**3/s =    81.6903655682153       km**3/a
  hydrology_model: HD model: nstep, f1, f2 =       105263   2805.29963679247        2014.85888576488
+ ------------------------------------------------------------------------------
+ 
+ writing restart files :
+ 
+ file format : NETCDF2
+ 
+ file suffix   buffer
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+Debug: opening for writing once: ('rerun_f05_1AGCM_hamocc.nc','nc4',snapshot,unmasked,hi,write,[7,10,11,12,13,14,15,16,17,20,21,22,23,24,27,28,29,30,31,37,38,41,44,45,46,47,48,49,50,51,54,55,56,57,58,59,60,61,62,64,203,204,205])
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ call iolist_write_final (bgc)
+ _jsbach  jsbach
+ _veg     veg
+ _echam   f
+ Number of 2D boundary exchanges:      6061676
+ Number of 3D boundary exchanges:      3160927
+PE:    0 Times for 2D/3D boundary exchanges:     66.428   375.368
+PE:    1 Times for 2D/3D boundary exchanges:     69.402   332.841
+PE:    2 Times for 2D/3D boundary exchanges:     64.007   335.536
+PE:    3 Times for 2D/3D boundary exchanges:     63.248   344.129
+PE:    4 Times for 2D/3D boundary exchanges:     68.477   388.221
+PE:    5 Times for 2D/3D boundary exchanges:     68.077   374.030
+PE:    6 Times for 2D/3D boundary exchanges:     66.618   353.872
+PE:    7 Times for 2D/3D boundary exchanges:     65.144   342.990
+PE:    8 Times for 2D/3D boundary exchanges:     64.643   347.315
+PE:    9 Times for 2D/3D boundary exchanges:     62.393   341.811
+PE:   10 Times for 2D/3D boundary exchanges:     64.910   369.768
+PE:   11 Times for 2D/3D boundary exchanges:     66.473   388.307
+PE:   12 Times for 2D/3D boundary exchanges:     73.067   386.464
+PE:   13 Times for 2D/3D boundary exchanges:     77.911   363.659
+PE:   14 Times for 2D/3D boundary exchanges:     73.845   314.957
+PE:   15 Times for 2D/3D boundary exchanges:     71.121   341.963
+PE:   16 Times for 2D/3D boundary exchanges:     64.505   319.364
+PE:   17 Times for 2D/3D boundary exchanges:     74.468   329.526
+PE:   18 Times for 2D/3D boundary exchanges:     69.895   316.904
+PE:   19 Times for 2D/3D boundary exchanges:     74.642   306.126
+PE:   20 Times for 2D/3D boundary exchanges:     72.253   319.104
+PE:   21 Times for 2D/3D boundary exchanges:     73.501   318.189
+PE:   22 Times for 2D/3D boundary exchanges:     72.918   287.477
+PE:   23 Times for 2D/3D boundary exchanges:     71.755   305.964
+PE:   24 Times for 2D/3D boundary exchanges:     67.160   326.699
+PE:   25 Times for 2D/3D boundary exchanges:     75.038   353.097
+PE:   26 Times for 2D/3D boundary exchanges:     62.013   315.028
+ NORMAL END OF MPIOM
+PE:   27 Times for 2D/3D boundary exchanges:     64.729   344.129
+PE:   28 Times for 2D/3D boundary exchanges:     68.161   354.435
+PE:   29 Times for 2D/3D boundary exchanges:     64.146   345.053
+PE:   30 Times for 2D/3D boundary exchanges:     70.730   305.114
+PE:   31 Times for 2D/3D boundary exchanges:     63.283   259.147
+PE:   32 Times for 2D/3D boundary exchanges:     68.360   287.620
+PE:   33 Times for 2D/3D boundary exchanges:     63.734   271.450
+ NORMAL END OF MPIOM
+PE:   34 Times for 2D/3D boundary exchanges:     67.275   293.686
+PE:   35 Times for 2D/3D boundary exchanges:     64.594   282.252
+PE:   36 Times for 2D/3D boundary exchanges:     65.712   309.496
+PE:   37 Times for 2D/3D boundary exchanges:     55.060   271.971
+PE:   38 Times for 2D/3D boundary exchanges:     52.820   278.101
+PE:   39 Times for 2D/3D boundary exchanges:     60.978   288.113
+PE:   40 Times for 2D/3D boundary exchanges:     65.828   358.134
+PE:   41 Times for 2D/3D boundary exchanges:     68.395   358.573
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   42 Times for 2D/3D boundary exchanges:     64.431   357.633
+PE:   43 Times for 2D/3D boundary exchanges:     69.992   303.230
+PE:   44 Times for 2D/3D boundary exchanges:     68.695   273.182
+PE:   45 Times for 2D/3D boundary exchanges:     73.275   272.747
+PE:   46 Times for 2D/3D boundary exchanges:     69.430   281.680
+PE:   47 Times for 2D/3D boundary exchanges:     72.950   350.084
+PE:   48 Times for 2D/3D boundary exchanges:     69.392   362.821
+PE:   49 Times for 2D/3D boundary exchanges:     71.659   343.498
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   50 Times for 2D/3D boundary exchanges:     60.777   295.924
+PE:   51 Times for 2D/3D boundary exchanges:     58.055   279.229
+PE:   52 Times for 2D/3D boundary exchanges:     67.322   300.984
+PE:   53 Times for 2D/3D boundary exchanges:     66.859   278.995
+PE:   54 Times for 2D/3D boundary exchanges:     71.096   358.190
+PE:   55 Times for 2D/3D boundary exchanges:     66.344   298.997
+PE:   56 Times for 2D/3D boundary exchanges:     68.324   275.009
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   57 Times for 2D/3D boundary exchanges:     65.843   255.525
+PE:   58 Times for 2D/3D boundary exchanges:     68.017   271.475
+PE:   59 Times for 2D/3D boundary exchanges:     65.482   274.365
+PE:   60 Times for 2D/3D boundary exchanges:     67.529   308.840
+PE:   61 Times for 2D/3D boundary exchanges:     65.549   328.933
+PE:   62 Times for 2D/3D boundary exchanges:     69.317   377.120
+PE:   63 Times for 2D/3D boundary exchanges:     61.878   370.040
+PE:   64 Times for 2D/3D boundary exchanges:     62.467   323.828
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   65 Times for 2D/3D boundary exchanges:     68.133   267.467
+PE:   66 Times for 2D/3D boundary exchanges:     64.483   268.311
+PE:   67 Times for 2D/3D boundary exchanges:     67.839   275.342
+PE:   68 Times for 2D/3D boundary exchanges:     64.838   271.247
+PE:   69 Times for 2D/3D boundary exchanges:     68.767   274.113
+PE:   70 Times for 2D/3D boundary exchanges:     66.065   269.450
+PE:   71 Times for 2D/3D boundary exchanges:     66.515   278.538
+PE:   72 Times for 2D/3D boundary exchanges:     65.404   381.767
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   73 Times for 2D/3D boundary exchanges:     67.297   334.559
+PE:   74 Times for 2D/3D boundary exchanges:     64.586   315.809
+PE:   75 Times for 2D/3D boundary exchanges:     68.907   356.247
+PE:   76 Times for 2D/3D boundary exchanges:     67.901   350.302
+PE:   77 Times for 2D/3D boundary exchanges:     68.543   262.562
+PE:   78 Times for 2D/3D boundary exchanges:     68.890   266.809
+PE:   79 Times for 2D/3D boundary exchanges:     66.936   251.489
+PE:   80 Times for 2D/3D boundary exchanges:     68.186   270.278
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   81 Times for 2D/3D boundary exchanges:     66.196   252.804
+PE:   82 Times for 2D/3D boundary exchanges:     67.210   293.465
+PE:   83 Times for 2D/3D boundary exchanges:     67.341   252.384
+PE:   84 Times for 2D/3D boundary exchanges:     67.820   268.210
+PE:   85 Times for 2D/3D boundary exchanges:     66.882   251.648
+PE:   86 Times for 2D/3D boundary exchanges:     68.951   329.808
+PE:   87 Times for 2D/3D boundary exchanges:     66.117   257.910
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   88 Times for 2D/3D boundary exchanges:     67.674   273.919
+PE:   89 Times for 2D/3D boundary exchanges:     65.339   247.674
+PE:   90 Times for 2D/3D boundary exchanges:     65.471   251.461
+PE:   91 Times for 2D/3D boundary exchanges:     68.595   250.148
+PE:   92 Times for 2D/3D boundary exchanges:     66.709   248.087
+PE:   93 Times for 2D/3D boundary exchanges:     68.348   259.163
+PE:   94 Times for 2D/3D boundary exchanges:     66.889   256.017
+PE:   95 Times for 2D/3D boundary exchanges:     64.853   226.649
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:   96 Times for 2D/3D boundary exchanges:     65.629   210.494
+PE:   97 Times for 2D/3D boundary exchanges:     65.437   227.872
+PE:   98 Times for 2D/3D boundary exchanges:     64.551   211.532
+PE:   99 Times for 2D/3D boundary exchanges:     65.490   229.598
+PE:  100 Times for 2D/3D boundary exchanges:     64.536   215.171
+PE:  101 Times for 2D/3D boundary exchanges:     66.883   235.204
+PE:  102 Times for 2D/3D boundary exchanges:     65.813   214.144
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:  103 Times for 2D/3D boundary exchanges:     64.241   226.653
+PE:  104 Times for 2D/3D boundary exchanges:     67.472   226.631
+PE:  105 Times for 2D/3D boundary exchanges:     63.004   224.564
+PE:  106 Times for 2D/3D boundary exchanges:     64.346   233.707
+PE:  107 Times for 2D/3D boundary exchanges:     64.156   224.312
+PE:  108 Times for 2D/3D boundary exchanges:     67.308   219.317
+PE:  109 Times for 2D/3D boundary exchanges:     65.366   220.693
+PE:  110 Times for 2D/3D boundary exchanges:     66.278   233.711
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:  111 Times for 2D/3D boundary exchanges:     66.368   225.479
+PE:  112 Times for 2D/3D boundary exchanges:     66.549   230.586
+PE:  113 Times for 2D/3D boundary exchanges:     66.732   226.287
+PE:  114 Times for 2D/3D boundary exchanges:     66.809   242.946
+PE:  115 Times for 2D/3D boundary exchanges:     67.861   228.019
+PE:  116 Times for 2D/3D boundary exchanges:     65.498   220.440
+PE:  117 Times for 2D/3D boundary exchanges:     64.597   242.955
+PE:  118 Times for 2D/3D boundary exchanges:     61.299   225.541
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:  119 Times for 2D/3D boundary exchanges:     66.279   237.544
+PE:  120 Times for 2D/3D boundary exchanges:     63.720   242.156
+PE:  121 Times for 2D/3D boundary exchanges:     64.212   228.205
+PE:  122 Times for 2D/3D boundary exchanges:     62.060   218.439
+PE:  123 Times for 2D/3D boundary exchanges:     66.593   232.598
+PE:  124 Times for 2D/3D boundary exchanges:     66.299   219.851
+PE:  125 Times for 2D/3D boundary exchanges:     67.021   227.173
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:  126 Times for 2D/3D boundary exchanges:     67.508   213.620
+PE:  127 Times for 2D/3D boundary exchanges:     63.509   284.365
+PE:  128 Times for 2D/3D boundary exchanges:     63.952   288.054
+PE:  129 Times for 2D/3D boundary exchanges:     60.788   290.183
+PE:  130 Times for 2D/3D boundary exchanges:     66.104   356.187
+PE:  131 Times for 2D/3D boundary exchanges:     56.063   329.336
+PE:  132 Times for 2D/3D boundary exchanges:     65.095   365.953
+PE:  133 Times for 2D/3D boundary exchanges:     62.216   378.596
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:  134 Times for 2D/3D boundary exchanges:     60.474   350.144
+PE:  135 Times for 2D/3D boundary exchanges:     56.950   323.118
+PE:  136 Times for 2D/3D boundary exchanges:     60.893   350.121
+PE:  137 Times for 2D/3D boundary exchanges:     58.842   319.091
+PE:  138 Times for 2D/3D boundary exchanges:     58.769   336.644
+PE:  139 Times for 2D/3D boundary exchanges:     61.370   328.481
+PE:  140 Times for 2D/3D boundary exchanges:     64.039   342.097
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+PE:  141 Times for 2D/3D boundary exchanges:     68.075   366.492
+PE:  142 Times for 2D/3D boundary exchanges:     66.521   379.854
+ NORMAL END OF MPIOM
+ Wallclock        :    2166.32 s
+ CPU-time (user)  :    2104.45 s
+ CPU-time (system):      59.65 s
+ Ratio            :      99.90 %
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ NORMAL END OF MPIOM
+ _echam   gl
+ _echam   g1a
+ _echam   g2a
+ _echam   g3b
+ _surf    surf
+ _co2     co2
+ 
+ ------------------------------------------------------------------------------
+ hydrology_restart: Writing hdrestart to file hdrestart.nc
+ Step  105120 completed.
+ ======================================================================
+ Start cleanup in control
+ ======================================================================
+ ======================================================================
+ Finished cleanup in control
+ ======================================================================
+ 
+ Wallclock        :    2168.08 s
+ CPU-time (user)  :    2076.02 s
+ CPU-time (system):      85.29 s
+ Ratio            :      99.69 %
+ 
+ Experiment checkpointed.
+END OF OASIS SIMULATION

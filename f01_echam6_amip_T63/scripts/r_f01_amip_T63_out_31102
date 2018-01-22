@@ -1,0 +1,1911 @@
+Starting job 31102 on c15-[1-12] at Thu Jan 18 21:01:16 CET 2018
+
+
+ Start of script at	Thu Jan 18 21:01:16 CET 2018
+ - on host or node	c15-1
+ - job name         	f01_echam6_amip_T63.run
+ - job id           	f01_echam6_amip_T63
+ - job directory    	/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts
+
+ |+ Time integration and run periode
+  |- Initial date of the experiment	19390101
+  |- Final date of the experiment	19821231
+   |- Beginning of this run    	 19800101
+   |- Beginning of the next run	 19810101
+
+‘/nird/home/earnest/models/MPI-ESM/mpiesm-1.echam6/Sources/fram-intel/bin/echam6_c171107o2_noNud.x’ -> ‘/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/bin/echam6_c171107o2_noNud.x’
+	|- WARNING : Job id of the previous run can not determined.	|    Job maybe interactively submitted.
+
+ |- Temporary working directory     	/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work
+ |- Data workshare on compute node  	/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63
+
+ |- Get input and restart data
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VGRATCLIM.nc  <--  unit.91
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VLTCLIM.nc  <--  unit.90
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63_TSLCLIM2.nc  <--  unit.92
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63L47_jan_spec.nc  <--  unit.23
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_jan_surf.nc  <--  unit.24
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/surrta_data  <--  rrtadata
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/rrtmg_lw.nc  <--  rrtmg_lw.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/ECHAM6_CldOptProps.nc  <--  ECHAM6_CldOptProps.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1978.nc  <--  ozon1978
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1979.nc  <--  ozon1979
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1980.nc  <--  ozon1980
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1981.nc  <--  ozon1981
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1978.nc  <--  aero_fine_1978.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1979.nc  <--  aero_fine_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1980.nc  <--  aero_fine_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1981.nc  <--  aero_fine_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1978.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1978.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1978.nc  <--  strat_aerosol_ir_1978.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1979.nc  <--  strat_aerosol_ir_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1980.nc  <--  strat_aerosol_ir_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1981.nc  <--  strat_aerosol_ir_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1978.nc  <--  strat_aerosol_sw_1978.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1979.nc  <--  strat_aerosol_sw_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1980.nc  <--  strat_aerosol_sw_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1981.nc  <--  strat_aerosol_sw_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1978.nc  <--  sst1978
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1979.nc  <--  sst1979
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1980.nc  <--  sst1980
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1981.nc  <--  sst1981
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1978.nc  <--  ice1978
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1979.nc  <--  ice1979
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1980.nc  <--  ice1980
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1981.nc  <--  ice1981
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1978.nc  <--  swflux_1978.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1979.nc  <--  swflux_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1980.nc  <--  swflux_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1981.nc  <--  swflux_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/greenhouse_rcp45.nc  <--  greenhouse_gases.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/echam6/rerun_f01_echam6_amip_T63_echam_19791231  >>>  rerun_f01_echam6_amip_T63_echam
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/echam6/rerun_f01_echam6_amip_T63_co2_19791231  >>>  rerun_f01_echam6_amip_T63_co2
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/input/jsbach/lctlib_nlct21.def  <--  lctlib.def
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/jsbach_T63GR15_11tiles_1976.nc  <--  jsbach.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1980.nc  <--  landuseTransitions.1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1979.nc  <--  landuseTransitions.1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1980.nc  <--  landuseHarvest.1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1979.nc  <--  landuseHarvest.1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_jsbach_19791231  >>>  rerun_f01_echam6_amip_T63_jsbach
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_veg_19791231  >>>  rerun_f01_echam6_amip_T63_veg
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_surf_19791231  >>>  rerun_f01_echam6_amip_T63_surf
+
+ |- Provide configuration files (namelists, XML, etc.)
+* ----------------------------------------------------------------------
+* Namelist of ECHAM: namelist.echam
+* ----------------------------------------------------------------------
+&parctl
+  NPROCA       = 24
+  NPROCB       = 16
+/
+&runctl
+  LTIMER         = .false.
+  LRESUME        = .TRUE.
+  OUT_DATAPATH   = './' 
+  OUT_EXPNAME    = 'f01_echam6_amip_T63'
+  OUT_FILETYPE   = 1
+  OUT_ZTYPE      = 0
+  RERUN_FILETYPE = 4
+  LAMIP          = true
+  DT_START       = 0000,00,00,00,00,00
+  DT_STOP        = 1981,01,01,00,00,00
+  DELTA_TIME     = 600.
+  PUTDATA        = 6,'hours','first',0
+  PUTRERUN       = 1,'years','last',0
+  TRIGFILES      = 1,'months','first',0
+  NPROMA         = 72
+  LIPCC          = .true.
+  NO_CYCLES      = 1
+  LMIDATM        = .true.
+  LDEBUGEV       = .false.
+  LCOUPLE_CO2    = .false.
+/
+&dynctl
+  ENSTDIF        = 1.0
+/
+&physctl
+  LCOVER       = .false.
+/
+&gwsctl 
+  LRMSCON_LAT  = .false. 
+/
+&submodelctl
+  LCO2         = .false.
+  LMETHOX      = .true.
+  LTRANSDIAG   = .true.
+/
+&radctl
+  IAERO        = 5
+  IO3          = 4
+  IGHG         = 1
+  ISOLRAD      = 1
+  ICFC         = 4
+  ICH4         = 4
+  IN2O         = 4
+  ICO2         = 4
+/
+&cospctl
+ LOCOSP        = .false.
+/
+&co2ctl
+ lco2_scenario = .true.
+/
+ 
+* ----------------------------------------------------------------------
+*    end of namelist.echam
+* ----------------------------------------------------------------------
+
+* ----------------------------------------------------------------------
+* Namelist of JSBACH: namelist.jsbach
+* ----------------------------------------------------------------------
+&jsbach_ctl
+  STANDALONE         = .false.
+  NTILES             = 11
+  USE_BETHY          = .true.
+  USE_PHENOLOGY      = .true.
+  USE_ALBEDO         = .true.
+  USE_DYNVEG         = .true.
+  WITH_NITROGEN      = .false.
+  LCC_FORCING_TYPE   = "transitions"
+  FILE_TYPE          = "GRIB"
+  LPOST_ECHAM        = .false.
+  DEBUG              = .false.
+  TEST_CCONSERVATION = .true.
+  READ_COVER_FRACT   = .false.
+/
+&cbalance_ctl
+  READ_CPOOLS = .false.
+  READ_NPOOLS = .false.
+  READ_NDEPO  = .false.
+/
+&dynveg_ctl
+  READ_FPC           = .false.
+  DYNVEG_FEEDBACK    = .false.
+/
+&climbuf_ctl
+  INIT_RUNNING_MEANS = .false.
+/
+* ----------------------------------------------------------------------
+*    end of namelist.jsbach
+* ----------------------------------------------------------------------
+
+List of files in working directory 
+/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work 
+at Thu Jan 18 21:01:23 CET 2018:
+total 401666
+drwxrwxr-x 2 earnest earnest     40960 Jan 18 21:01 .
+drwxrwxr-x 9 earnest earnest      4096 Jan 18 20:46 ..
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_coarse_1978.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_coarse_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_coarse_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_coarse_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_farir_1978.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_farir_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_farir_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 aero_farir_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:01 aero_fine_1978.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1978.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:01 aero_fine_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1979.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:01 aero_fine_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1980.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:01 aero_fine_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1981.nc
+lrwxrwxrwx 1 earnest earnest        97 Jan 18 21:01 echam6 -> /nird/home/earnest/models/MPI-ESM/mpiesm-1.echam6/Sources/fram-intel/bin/echam6_c171107o2_noNud.x
+lrwxrwxrwx 1 earnest earnest        99 Jan 18 21:01 ECHAM6_CldOptProps.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/ECHAM6_CldOptProps.nc
+lrwxrwxrwx 1 earnest earnest        97 Jan 18 21:01 greenhouse_gases.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/greenhouse_rcp45.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 ice1978 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1978.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 ice1979 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1979.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 ice1980 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1980.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 ice1981 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1981.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:01 jsbach.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/jsbach_T63GR15_11tiles_1976.nc
+lrwxrwxrwx 1 earnest earnest       114 Jan 18 21:01 landuseHarvest.1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1979.nc
+lrwxrwxrwx 1 earnest earnest       114 Jan 18 21:01 landuseHarvest.1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 landuseTransitions.1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1979.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:01 landuseTransitions.1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest        89 Jan 18 21:01 lctlib.def -> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/input/jsbach/lctlib_nlct21.def
+-rw-rw-r-- 1 earnest earnest      1062 Jan 18 21:01 namelist.echam
+-rw-rw-r-- 1 earnest earnest       622 Jan 18 21:01 namelist.jsbach
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:01 ozon1978 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1978.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:01 ozon1979 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1979.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:01 ozon1980 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1980.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:01 ozon1981 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1981.nc
+-rw-r--r-- 1 earnest earnest   2267268 Jan 18 20:57 rerun_f01_echam6_amip_T63_co2
+-rw-r--r-- 1 earnest earnest 290675180 Jan 18 20:57 rerun_f01_echam6_amip_T63_echam
+-rw-r--r-- 1 earnest earnest  57748112 Jan 18 20:57 rerun_f01_echam6_amip_T63_jsbach
+-rw-r--r-- 1 earnest earnest  33686120 Jan 18 20:57 rerun_f01_echam6_amip_T63_surf
+-rw-r--r-- 1 earnest earnest  37742044 Jan 18 20:57 rerun_f01_echam6_amip_T63_veg
+lrwxrwxrwx 1 earnest earnest        89 Jan 18 21:01 rrtadata -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/surrta_data
+lrwxrwxrwx 1 earnest earnest        89 Jan 18 21:01 rrtmg_lw.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/rrtmg_lw.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 sst1978 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1978.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 sst1979 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1979.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 sst1980 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1980.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:01 sst1981 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1981.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_ir_1978.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1978.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_ir_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1979.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_ir_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_ir_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1981.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_sw_1978.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1978.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_sw_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1979.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_sw_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:01 strat_aerosol_sw_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1981.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:01 swflux_1978.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1978.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:01 swflux_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1979.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:01 swflux_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1980.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:01 swflux_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1981.nc
+lrwxrwxrwx 1 earnest earnest       100 Jan 18 21:01 unit.23 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63L47_jan_spec.nc
+lrwxrwxrwx 1 earnest earnest       101 Jan 18 21:01 unit.24 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_jan_surf.nc
+lrwxrwxrwx 1 earnest earnest       100 Jan 18 21:01 unit.90 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VLTCLIM.nc
+lrwxrwxrwx 1 earnest earnest       102 Jan 18 21:01 unit.91 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VGRATCLIM.nc
+lrwxrwxrwx 1 earnest earnest        97 Jan 18 21:01 unit.92 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63_TSLCLIM2.nc
++ date +%y%m%d_%H%M%S
++ LID=180118_210123
++ export LID
++ outlogfile=/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_log_180118_210123
++ outerrfile=/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_err_180118_210123
++ printf '\n%s\n' ' |---------------------------------------------------------|'
+
+ |---------------------------------------------------------|
++ printf '%s\n' ' |- Model launched at $(date)                              '
+ |- Model launched at $(date)                              
++ printf '%s\n\n' ' |---------------------------------------------------------|'
+ |---------------------------------------------------------|
+
++ rm -f mpmd.lst
++ n=0
++ (( n2 = n + nprocatm -1 ))
++ echo '-0 ./echam6'
++ 1>> mpmd.lst
++ paffopt=' -n 384 '
++ /usr/bin/srun -n 384 ./echam6
++ 1> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_log_180118_210123 2> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_err_180118_210123
+
+real	22m54.65s
+user	0m2.54s
+sys	0m7.31s
++ printf '\n%s\n' ' |---------------------------------------------------------|'
+
+ |---------------------------------------------------------|
++ printf '%s\n' ' |- Model run completed at $(date)                         '
+ |- Model run completed at $(date)                         
++ printf '%s\n\n' ' |---------------------------------------------------------|'
+ |---------------------------------------------------------|
+
++ [[ -s ERROR.ctl ]]
++ [ -f '*.echam6' ]
++ profile=no
++ [[ no == yes ]]
++ calc_date minus -c1 -D1 -- 19810101
++ enddate=19801231
++ calc_date minus -c1 -D1 -- 19800101
++ prevdate=19791231
++ cut -f1 '-d '
++ format_date -f4 -- 19800101
++ startyear=1980
++ format_date -f4 -- 19791231
++ cut -f1 '-d '
++ prevyear=1979
++ prevdecade=197
++ [[ -r /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/f01_echam6_amip_T63.log ]]
++ get_logpid -d 19800101 -f /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/f01_echam6_amip_T63.log
++ loginfo='f01_echam6_amip_T63 19800101'
++ [[ -n 'f01_echam6_amip_T63 19800101' ]]
++ previd=f01_echam6_amip_T63
++ prevstart=19800101
++ wait
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save ECHAM output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save ECHAM output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ suff=.grb
++ [[ 0 == 1 ]]
++ cd /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work
++ wait
++ SAVE_status=0
++ substreams='echam co2'
++ [[ '' == true ]]
++ [[ false == true ]]
++ date=19800101
++ later_date -- 19800101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [ -r f01_echam6_amip_T63_198001.01_echam ]
++ [ -r f01_echam6_amip_T63_198001.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file echam6 output f01_echam6_amip_T63_198001.01_echam f01_echam6_amip_T63_echam6_echam_198001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198001.grb
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [ -r f01_echam6_amip_T63_198002.01_echam ]
++ [ -r f01_echam6_amip_T63_198002.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file echam6 output f01_echam6_amip_T63_198002.01_echam f01_echam6_amip_T63_echam6_echam_198002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198002.grb
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [ -r f01_echam6_amip_T63_198003.01_echam ]
++ [ -r f01_echam6_amip_T63_198003.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file echam6 output f01_echam6_amip_T63_198003.01_echam f01_echam6_amip_T63_echam6_echam_198003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198003.grb
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [ -r f01_echam6_amip_T63_198004.01_echam ]
++ [ -r f01_echam6_amip_T63_198004.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file echam6 output f01_echam6_amip_T63_198004.01_echam f01_echam6_amip_T63_echam6_echam_198004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198004.grb
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [ -r f01_echam6_amip_T63_198005.01_echam ]
++ [ -r f01_echam6_amip_T63_198005.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file echam6 output f01_echam6_amip_T63_198005.01_echam f01_echam6_amip_T63_echam6_echam_198005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198005.grb
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ cut -f1 '-d '
++ format_date -f4 -- 19800601
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [ -r f01_echam6_amip_T63_198006.01_echam ]
++ [ -r f01_echam6_amip_T63_198006.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file echam6 output f01_echam6_amip_T63_198006.01_echam f01_echam6_amip_T63_echam6_echam_198006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198006.grb
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [ -r f01_echam6_amip_T63_198007.01_echam ]
++ [ -r f01_echam6_amip_T63_198007.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file echam6 output f01_echam6_amip_T63_198007.01_echam f01_echam6_amip_T63_echam6_echam_198007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198007.grb
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [ -r f01_echam6_amip_T63_198008.01_echam ]
++ [ -r f01_echam6_amip_T63_198008.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file echam6 output f01_echam6_amip_T63_198008.01_echam f01_echam6_amip_T63_echam6_echam_198008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198008.grb
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [ -r f01_echam6_amip_T63_198009.01_echam ]
++ [ -r f01_echam6_amip_T63_198009.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file echam6 output f01_echam6_amip_T63_198009.01_echam f01_echam6_amip_T63_echam6_echam_198009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198009.grb
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [ -r f01_echam6_amip_T63_198010.01_echam ]
++ [ -r f01_echam6_amip_T63_198010.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file echam6 output f01_echam6_amip_T63_198010.01_echam f01_echam6_amip_T63_echam6_echam_198010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198010.grb
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [ -r f01_echam6_amip_T63_198011.01_echam ]
++ [ -r f01_echam6_amip_T63_198011.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file echam6 output f01_echam6_amip_T63_198011.01_echam f01_echam6_amip_T63_echam6_echam_198011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198011.grb
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [ -r f01_echam6_amip_T63_198012.01_echam ]
++ [ -r f01_echam6_amip_T63_198012.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file echam6 output f01_echam6_amip_T63_198012.01_echam f01_echam6_amip_T63_echam6_echam_198012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_echam_198012.grb
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ 02 == 1 ]]
++ [[ -r rerun_f01_echam6_amip_T63_echam ]]
++ date=19800101
++ later_date -- 19800101 19801231
++ save_file echam6 restart rerun_f01_echam6_amip_T63_echam rerun_f01_echam6_amip_T63_echam_19801231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/rerun_f01_echam6_amip_T63_echam >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/echam6/rerun_f01_echam6_amip_T63_echam_19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [ -r f01_echam6_amip_T63_198001.01_co2 ]
++ [ -r f01_echam6_amip_T63_198001.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file echam6 output f01_echam6_amip_T63_198001.01_co2 f01_echam6_amip_T63_echam6_co2_198001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198001.grb
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [ -r f01_echam6_amip_T63_198002.01_co2 ]
++ [ -r f01_echam6_amip_T63_198002.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file echam6 output f01_echam6_amip_T63_198002.01_co2 f01_echam6_amip_T63_echam6_co2_198002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198002.grb
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [ -r f01_echam6_amip_T63_198003.01_co2 ]
++ [ -r f01_echam6_amip_T63_198003.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file echam6 output f01_echam6_amip_T63_198003.01_co2 f01_echam6_amip_T63_echam6_co2_198003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198003.grb
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [ -r f01_echam6_amip_T63_198004.01_co2 ]
++ [ -r f01_echam6_amip_T63_198004.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file echam6 output f01_echam6_amip_T63_198004.01_co2 f01_echam6_amip_T63_echam6_co2_198004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198004.grb
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [ -r f01_echam6_amip_T63_198005.01_co2 ]
++ [ -r f01_echam6_amip_T63_198005.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file echam6 output f01_echam6_amip_T63_198005.01_co2 f01_echam6_amip_T63_echam6_co2_198005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198005.grb
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800601
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [ -r f01_echam6_amip_T63_198006.01_co2 ]
++ [ -r f01_echam6_amip_T63_198006.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file echam6 output f01_echam6_amip_T63_198006.01_co2 f01_echam6_amip_T63_echam6_co2_198006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198006.grb
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [ -r f01_echam6_amip_T63_198007.01_co2 ]
++ [ -r f01_echam6_amip_T63_198007.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file echam6 output f01_echam6_amip_T63_198007.01_co2 f01_echam6_amip_T63_echam6_co2_198007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198007.grb
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [ -r f01_echam6_amip_T63_198008.01_co2 ]
++ [ -r f01_echam6_amip_T63_198008.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file echam6 output f01_echam6_amip_T63_198008.01_co2 f01_echam6_amip_T63_echam6_co2_198008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198008.grb
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [ -r f01_echam6_amip_T63_198009.01_co2 ]
++ [ -r f01_echam6_amip_T63_198009.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file echam6 output f01_echam6_amip_T63_198009.01_co2 f01_echam6_amip_T63_echam6_co2_198009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198009.grb
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [ -r f01_echam6_amip_T63_198010.01_co2 ]
++ [ -r f01_echam6_amip_T63_198010.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file echam6 output f01_echam6_amip_T63_198010.01_co2 f01_echam6_amip_T63_echam6_co2_198010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198010.grb
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [ -r f01_echam6_amip_T63_198011.01_co2 ]
++ [ -r f01_echam6_amip_T63_198011.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file echam6 output f01_echam6_amip_T63_198011.01_co2 f01_echam6_amip_T63_echam6_co2_198011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198011.grb
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [ -r f01_echam6_amip_T63_198012.01_co2 ]
++ [ -r f01_echam6_amip_T63_198012.01_hd_higres.nc ]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file echam6 output f01_echam6_amip_T63_198012.01_co2 f01_echam6_amip_T63_echam6_co2_198012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_co2_198012.grb
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ 02 == 1 ]]
++ [[ -r rerun_f01_echam6_amip_T63_co2 ]]
++ [[ false == true ]]
++ [[ false == T ]]
++ date=19800101
++ later_date -- 19800101 19801231
++ save_file echam6 restart rerun_f01_echam6_amip_T63_co2 rerun_f01_echam6_amip_T63_co2_19801231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/rerun_f01_echam6_amip_T63_co2 >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/echam6/rerun_f01_echam6_amip_T63_co2_19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [[ -r f01_echam6_amip_T63_198001.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file echam6 output f01_echam6_amip_T63_198001.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198001.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198001.nc
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [[ -r f01_echam6_amip_T63_198002.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file echam6 output f01_echam6_amip_T63_198002.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198002.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198002.nc
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [[ -r f01_echam6_amip_T63_198003.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file echam6 output f01_echam6_amip_T63_198003.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198003.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198003.nc
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [[ -r f01_echam6_amip_T63_198004.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file echam6 output f01_echam6_amip_T63_198004.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198004.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198004.nc
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [[ -r f01_echam6_amip_T63_198005.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file echam6 output f01_echam6_amip_T63_198005.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198005.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198005.nc
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800601
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [[ -r f01_echam6_amip_T63_198006.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file echam6 output f01_echam6_amip_T63_198006.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198006.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198006.nc
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [[ -r f01_echam6_amip_T63_198007.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file echam6 output f01_echam6_amip_T63_198007.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198007.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198007.nc
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [[ -r f01_echam6_amip_T63_198008.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file echam6 output f01_echam6_amip_T63_198008.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198008.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198008.nc
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [[ -r f01_echam6_amip_T63_198009.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file echam6 output f01_echam6_amip_T63_198009.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198009.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198009.nc
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [[ -r f01_echam6_amip_T63_198010.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file echam6 output f01_echam6_amip_T63_198010.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198010.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198010.nc
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [[ -r f01_echam6_amip_T63_198011.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file echam6 output f01_echam6_amip_T63_198011.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198011.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198011.nc
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [[ -r f01_echam6_amip_T63_198012.01_trdiag.nc ]]
++ [[ false == true ]]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file echam6 output f01_echam6_amip_T63_198012.01_trdiag.nc f01_echam6_amip_T63_echam6_trdiag_198012.nc
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_trdiag.nc >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/echam6/f01_echam6_amip_T63_echam6_trdiag_198012.nc
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ false == true ]]
++ [[ false == T ]]
++ [ false '=' true ]
++ wait
++ printf '\n%s\n\t\t%s\n\t\t%s\n\n' '+++++ Save JSBACH output and restart files' $' from   /cluster/work/users/earnest/mpiexm_exp/\'expid\'/work' $' to     /cluster/work/users/earnest/mpiexm_exp/\'expid\''
+
++++++ Save JSBACH output and restart files
+		 from   /cluster/work/users/earnest/mpiexm_exp/'expid'/work
+		 to     /cluster/work/users/earnest/mpiexm_exp/'expid'
+
++ suff=.grb
++ [[ 0 == 1 ]]
++ cd /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work
++ wait
++ SAVE_status=0
++ substreams='jsbach land veg surf'
++ [ 02 '=' 1 ]
++ substreams='jsbach land veg surf'
++ [[ jsbach == jsbach ]]
++ datastream=f01_echam6_amip_T63_jsbach
++ date=19800101
++ later_date -- 19800101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [ -r f01_echam6_amip_T63_198001.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file jsbach output f01_echam6_amip_T63_198001.01_jsbach f01_echam6_amip_T63_jsbach_198001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198001.grb
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [ -r f01_echam6_amip_T63_198002.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file jsbach output f01_echam6_amip_T63_198002.01_jsbach f01_echam6_amip_T63_jsbach_198002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198002.grb
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [ -r f01_echam6_amip_T63_198003.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file jsbach output f01_echam6_amip_T63_198003.01_jsbach f01_echam6_amip_T63_jsbach_198003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198003.grb
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [ -r f01_echam6_amip_T63_198004.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file jsbach output f01_echam6_amip_T63_198004.01_jsbach f01_echam6_amip_T63_jsbach_198004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198004.grb
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [ -r f01_echam6_amip_T63_198005.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file jsbach output f01_echam6_amip_T63_198005.01_jsbach f01_echam6_amip_T63_jsbach_198005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198005.grb
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800601
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [ -r f01_echam6_amip_T63_198006.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file jsbach output f01_echam6_amip_T63_198006.01_jsbach f01_echam6_amip_T63_jsbach_198006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198006.grb
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [ -r f01_echam6_amip_T63_198007.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file jsbach output f01_echam6_amip_T63_198007.01_jsbach f01_echam6_amip_T63_jsbach_198007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198007.grb
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [ -r f01_echam6_amip_T63_198008.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file jsbach output f01_echam6_amip_T63_198008.01_jsbach f01_echam6_amip_T63_jsbach_198008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198008.grb
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [ -r f01_echam6_amip_T63_198009.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file jsbach output f01_echam6_amip_T63_198009.01_jsbach f01_echam6_amip_T63_jsbach_198009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198009.grb
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [ -r f01_echam6_amip_T63_198010.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file jsbach output f01_echam6_amip_T63_198010.01_jsbach f01_echam6_amip_T63_jsbach_198010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198010.grb
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [ -r f01_echam6_amip_T63_198011.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file jsbach output f01_echam6_amip_T63_198011.01_jsbach f01_echam6_amip_T63_jsbach_198011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198011.grb
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [ -r f01_echam6_amip_T63_198012.01_jsbach ]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file jsbach output f01_echam6_amip_T63_198012.01_jsbach f01_echam6_amip_T63_jsbach_198012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_198012.grb
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ jsbach == land ]]
++ [ -r rerun_f01_echam6_amip_T63_jsbach ]
++ [[ land == jsbach ]]
++ datastream=f01_echam6_amip_T63_jsbach_land
++ date=19800101
++ later_date -- 19800101 19801231
++ save_file jsbach restart rerun_f01_echam6_amip_T63_jsbach rerun_f01_echam6_amip_T63_jsbach_19801231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/rerun_f01_echam6_amip_T63_jsbach >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_jsbach_19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [ -r f01_echam6_amip_T63_198001.01_land ]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file jsbach output f01_echam6_amip_T63_198001.01_land f01_echam6_amip_T63_jsbach_land_198001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198001.grb
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [ -r f01_echam6_amip_T63_198002.01_land ]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file jsbach output f01_echam6_amip_T63_198002.01_land f01_echam6_amip_T63_jsbach_land_198002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198002.grb
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [ -r f01_echam6_amip_T63_198003.01_land ]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file jsbach output f01_echam6_amip_T63_198003.01_land f01_echam6_amip_T63_jsbach_land_198003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198003.grb
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [ -r f01_echam6_amip_T63_198004.01_land ]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file jsbach output f01_echam6_amip_T63_198004.01_land f01_echam6_amip_T63_jsbach_land_198004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198004.grb
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [ -r f01_echam6_amip_T63_198005.01_land ]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file jsbach output f01_echam6_amip_T63_198005.01_land f01_echam6_amip_T63_jsbach_land_198005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198005.grb
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800601
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [ -r f01_echam6_amip_T63_198006.01_land ]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file jsbach output f01_echam6_amip_T63_198006.01_land f01_echam6_amip_T63_jsbach_land_198006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198006.grb
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [ -r f01_echam6_amip_T63_198007.01_land ]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file jsbach output f01_echam6_amip_T63_198007.01_land f01_echam6_amip_T63_jsbach_land_198007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198007.grb
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [ -r f01_echam6_amip_T63_198008.01_land ]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file jsbach output f01_echam6_amip_T63_198008.01_land f01_echam6_amip_T63_jsbach_land_198008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198008.grb
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [ -r f01_echam6_amip_T63_198009.01_land ]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file jsbach output f01_echam6_amip_T63_198009.01_land f01_echam6_amip_T63_jsbach_land_198009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198009.grb
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [ -r f01_echam6_amip_T63_198010.01_land ]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file jsbach output f01_echam6_amip_T63_198010.01_land f01_echam6_amip_T63_jsbach_land_198010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198010.grb
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [ -r f01_echam6_amip_T63_198011.01_land ]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file jsbach output f01_echam6_amip_T63_198011.01_land f01_echam6_amip_T63_jsbach_land_198011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198011.grb
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [ -r f01_echam6_amip_T63_198012.01_land ]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file jsbach output f01_echam6_amip_T63_198012.01_land f01_echam6_amip_T63_jsbach_land_198012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_land >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_land_198012.grb
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ land == land ]]
++ [[ veg == jsbach ]]
++ datastream=f01_echam6_amip_T63_jsbach_veg
++ date=19800101
++ later_date -- 19800101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [ -r f01_echam6_amip_T63_198001.01_veg ]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file jsbach output f01_echam6_amip_T63_198001.01_veg f01_echam6_amip_T63_jsbach_veg_198001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198001.grb
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [ -r f01_echam6_amip_T63_198002.01_veg ]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file jsbach output f01_echam6_amip_T63_198002.01_veg f01_echam6_amip_T63_jsbach_veg_198002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198002.grb
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [ -r f01_echam6_amip_T63_198003.01_veg ]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file jsbach output f01_echam6_amip_T63_198003.01_veg f01_echam6_amip_T63_jsbach_veg_198003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198003.grb
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [ -r f01_echam6_amip_T63_198004.01_veg ]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file jsbach output f01_echam6_amip_T63_198004.01_veg f01_echam6_amip_T63_jsbach_veg_198004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198004.grb
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [ -r f01_echam6_amip_T63_198005.01_veg ]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file jsbach output f01_echam6_amip_T63_198005.01_veg f01_echam6_amip_T63_jsbach_veg_198005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198005.grb
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800601
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [ -r f01_echam6_amip_T63_198006.01_veg ]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file jsbach output f01_echam6_amip_T63_198006.01_veg f01_echam6_amip_T63_jsbach_veg_198006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198006.grb
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [ -r f01_echam6_amip_T63_198007.01_veg ]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file jsbach output f01_echam6_amip_T63_198007.01_veg f01_echam6_amip_T63_jsbach_veg_198007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198007.grb
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [ -r f01_echam6_amip_T63_198008.01_veg ]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file jsbach output f01_echam6_amip_T63_198008.01_veg f01_echam6_amip_T63_jsbach_veg_198008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198008.grb
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [ -r f01_echam6_amip_T63_198009.01_veg ]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file jsbach output f01_echam6_amip_T63_198009.01_veg f01_echam6_amip_T63_jsbach_veg_198009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198009.grb
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [ -r f01_echam6_amip_T63_198010.01_veg ]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file jsbach output f01_echam6_amip_T63_198010.01_veg f01_echam6_amip_T63_jsbach_veg_198010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198010.grb
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [ -r f01_echam6_amip_T63_198011.01_veg ]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file jsbach output f01_echam6_amip_T63_198011.01_veg f01_echam6_amip_T63_jsbach_veg_198011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198011.grb
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [ -r f01_echam6_amip_T63_198012.01_veg ]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file jsbach output f01_echam6_amip_T63_198012.01_veg f01_echam6_amip_T63_jsbach_veg_198012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_veg_198012.grb
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ veg == land ]]
++ [ -r rerun_f01_echam6_amip_T63_veg ]
++ [[ surf == jsbach ]]
++ datastream=f01_echam6_amip_T63_jsbach_surf
++ date=19800101
++ later_date -- 19800101 19801231
++ save_file jsbach restart rerun_f01_echam6_amip_T63_veg rerun_f01_echam6_amip_T63_veg_19801231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/rerun_f01_echam6_amip_T63_veg >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_veg_19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800101
++ cut -f2 '-d '
++ month=01
++ format_date -f4 -- 19800101
++ cut -f3 '-d '
++ day=01
++ ym=198001
++ [ -r f01_echam6_amip_T63_198001.01_surf ]
++ calc_date plus -c1 -M1 -- 19800101
++ save_file jsbach output f01_echam6_amip_T63_198001.01_surf f01_echam6_amip_T63_jsbach_surf_198001.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198001.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198001.grb
++ date=19800201
++ later_date -- 19800201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800201
++ cut -f2 '-d '
++ month=02
++ format_date -f4 -- 19800201
++ cut -f3 '-d '
++ day=01
++ ym=198002
++ [ -r f01_echam6_amip_T63_198002.01_surf ]
++ calc_date plus -c1 -M1 -- 19800201
++ save_file jsbach output f01_echam6_amip_T63_198002.01_surf f01_echam6_amip_T63_jsbach_surf_198002.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198002.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198002.grb
++ date=19800301
++ later_date -- 19800301 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800301
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800301
++ cut -f2 '-d '
++ month=03
++ format_date -f4 -- 19800301
++ cut -f3 '-d '
++ day=01
++ ym=198003
++ [ -r f01_echam6_amip_T63_198003.01_surf ]
++ calc_date plus -c1 -M1 -- 19800301
++ save_file jsbach output f01_echam6_amip_T63_198003.01_surf f01_echam6_amip_T63_jsbach_surf_198003.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198003.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198003.grb
++ date=19800401
++ later_date -- 19800401 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800401
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800401
++ cut -f2 '-d '
++ month=04
++ format_date -f4 -- 19800401
++ cut -f3 '-d '
++ day=01
++ ym=198004
++ [ -r f01_echam6_amip_T63_198004.01_surf ]
++ calc_date plus -c1 -M1 -- 19800401
++ save_file jsbach output f01_echam6_amip_T63_198004.01_surf f01_echam6_amip_T63_jsbach_surf_198004.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198004.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198004.grb
++ date=19800501
++ later_date -- 19800501 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800501
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800501
++ cut -f2 '-d '
++ month=05
++ format_date -f4 -- 19800501
++ cut -f3 '-d '
++ day=01
++ ym=198005
++ [ -r f01_echam6_amip_T63_198005.01_surf ]
++ calc_date plus -c1 -M1 -- 19800501
++ save_file jsbach output f01_echam6_amip_T63_198005.01_surf f01_echam6_amip_T63_jsbach_surf_198005.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198005.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198005.grb
++ date=19800601
++ later_date -- 19800601 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800601
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800601
++ cut -f2 '-d '
++ month=06
++ format_date -f4 -- 19800601
++ cut -f3 '-d '
++ day=01
++ ym=198006
++ [ -r f01_echam6_amip_T63_198006.01_surf ]
++ calc_date plus -c1 -M1 -- 19800601
++ save_file jsbach output f01_echam6_amip_T63_198006.01_surf f01_echam6_amip_T63_jsbach_surf_198006.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198006.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198006.grb
++ date=19800701
++ later_date -- 19800701 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800701
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800701
++ cut -f2 '-d '
++ month=07
++ format_date -f4 -- 19800701
++ cut -f3 '-d '
++ day=01
++ ym=198007
++ [ -r f01_echam6_amip_T63_198007.01_surf ]
++ calc_date plus -c1 -M1 -- 19800701
++ save_file jsbach output f01_echam6_amip_T63_198007.01_surf f01_echam6_amip_T63_jsbach_surf_198007.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198007.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198007.grb
++ date=19800801
++ later_date -- 19800801 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800801
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800801
++ cut -f2 '-d '
++ month=08
++ format_date -f4 -- 19800801
++ cut -f3 '-d '
++ day=01
++ ym=198008
++ [ -r f01_echam6_amip_T63_198008.01_surf ]
++ calc_date plus -c1 -M1 -- 19800801
++ save_file jsbach output f01_echam6_amip_T63_198008.01_surf f01_echam6_amip_T63_jsbach_surf_198008.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198008.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198008.grb
++ date=19800901
++ later_date -- 19800901 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19800901
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19800901
++ cut -f2 '-d '
++ month=09
++ format_date -f4 -- 19800901
++ cut -f3 '-d '
++ day=01
++ ym=198009
++ [ -r f01_echam6_amip_T63_198009.01_surf ]
++ calc_date plus -c1 -M1 -- 19800901
++ save_file jsbach output f01_echam6_amip_T63_198009.01_surf f01_echam6_amip_T63_jsbach_surf_198009.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198009.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198009.grb
++ date=19801001
++ later_date -- 19801001 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801001
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801001
++ cut -f2 '-d '
++ month=10
++ format_date -f4 -- 19801001
++ cut -f3 '-d '
++ day=01
++ ym=198010
++ [ -r f01_echam6_amip_T63_198010.01_surf ]
++ calc_date plus -c1 -M1 -- 19801001
++ save_file jsbach output f01_echam6_amip_T63_198010.01_surf f01_echam6_amip_T63_jsbach_surf_198010.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198010.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198010.grb
++ date=19801101
++ later_date -- 19801101 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801101
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801101
++ cut -f2 '-d '
++ month=11
++ format_date -f4 -- 19801101
++ cut -f3 '-d '
++ day=01
++ ym=198011
++ [ -r f01_echam6_amip_T63_198011.01_surf ]
++ calc_date plus -c1 -M1 -- 19801101
++ save_file jsbach output f01_echam6_amip_T63_198011.01_surf f01_echam6_amip_T63_jsbach_surf_198011.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198011.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198011.grb
++ date=19801201
++ later_date -- 19801201 19801231
++ [[ 19801231 == 19801231 ]]
++ format_date -f4 -- 19801201
++ cut -f1 '-d '
++ year=1980
++ format_date -f4 -- 19801201
++ cut -f2 '-d '
++ month=12
++ format_date -f4 -- 19801201
++ cut -f3 '-d '
++ day=01
++ ym=198012
++ [ -r f01_echam6_amip_T63_198012.01_surf ]
++ calc_date plus -c1 -M1 -- 19801201
++ save_file jsbach output f01_echam6_amip_T63_198012.01_surf f01_echam6_amip_T63_jsbach_surf_198012.grb
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/f01_echam6_amip_T63_198012.01_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/outdata/jsbach/f01_echam6_amip_T63_jsbach_surf_198012.grb
++ date=19810101
++ later_date -- 19810101 19801231
++ [[ 19810101 == 19801231 ]]
++ [[ surf == land ]]
++ [ -r rerun_f01_echam6_amip_T63_surf ]
++ wait
++ save_file jsbach restart rerun_f01_echam6_amip_T63_surf rerun_f01_echam6_amip_T63_surf_19801231
+save_file : /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work/rerun_f01_echam6_amip_T63_surf >>> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_surf_19801231
++ format_date -f4 -- 19810101
++ cut -f1 '-d '
++ year=1981
++ [[ no == no ]]
++ [[ 0 == 0 ]]
++ printf '\n    |+ The model integration run finished successfully\n'
+
+    |+ The model integration run finished successfully
++ [[ 0 == 0 ]]
++ printf '\n    |+ All existing output files have been saved.\n'
+
+    |+ All existing output files have been saved.
++ cd /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts
++ (( nextjob = 02 + 1 ))
++ space_error=no
++ echo '19810101 3'
++ 1> f01_echam6_amip_T63.date.new
++ cp f01_echam6_amip_T63.log f01_echam6_amip_T63.log.new
++ date '+%a %b %d %H:%M:%S %Z %Y'
++ echo 'Thu Jan 18 21:25:36 CET 2018 :  02 19810101 f01_echam6_amip_T63  - done'
++ 1>> f01_echam6_amip_T63.log.new
++ [ no '=' no ]
++ mv f01_echam6_amip_T63.date.new f01_echam6_amip_T63.date
++ mv f01_echam6_amip_T63.log.new f01_echam6_amip_T63.log
++ [[ no == no ]]
++ later_date -- 19810101 19821231
++ [[ 19821231 == 19810101 ]]
++ sbatch f01_echam6_amip_T63.run
+Submitted batch job 31107
++ cd /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts
++ [ post '=' post ]
++ [ -e /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/.lock_postprocessing ]
++ echo 'no post'
+no post
++ wait
++ date '+%b %d %T'
++ hostname
++ printf '\n%s\t%s\n' ' End of script at ' 'Jan 18 21:25:36 on c15-1'
+
+ End of script at 	Jan 18 21:25:36 on c15-1
++ exit
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+31102        f01_amip_+        384                                             00:24:21      0:0 
+31102.batch       batch         32        1   00:00:10          0   00:00:00   00:24:21      0:0 
+31102.0          echam6        384      384   00:22:27          3   00:22:48   00:22:55      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+31102                                                                            
+31102.batch       8053K          0      3185K      13K              0        13K 
+31102.0        1459915K          0 103292.38K      16K              3      4.88K 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+31102                                                                                                 
+31102.batch       478.67M               0        478.67M      429.05M                0        429.05M 
+31102.0          1219.80M               0          4.25M    38955.77M                0        101.51M 
+
+Job 31102 completed at Thu Jan 18 21:25:38 CET 2018

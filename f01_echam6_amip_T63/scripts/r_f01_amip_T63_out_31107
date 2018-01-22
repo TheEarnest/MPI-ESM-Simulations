@@ -1,0 +1,288 @@
+Starting job 31107 on c15-[1-12] at Thu Jan 18 21:26:00 CET 2018
+
+
+ Start of script at	Thu Jan 18 21:26:00 CET 2018
+ - on host or node	c15-1
+ - job name         	f01_echam6_amip_T63.run
+ - job id           	f01_echam6_amip_T63
+ - job directory    	/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts
+
+ |+ Time integration and run periode
+  |- Initial date of the experiment	19390101
+  |- Final date of the experiment	19821231
+   |- Beginning of this run    	 19810101
+   |- Beginning of the next run	 19820101
+
+‘/nird/home/earnest/models/MPI-ESM/mpiesm-1.echam6/Sources/fram-intel/bin/echam6_c171107o2_noNud.x’ -> ‘/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/bin/echam6_c171107o2_noNud.x’
+	|- WARNING : Job id of the previous run can not determined.	|    Job maybe interactively submitted.
+
+ |- Temporary working directory     	/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work
+ |- Data workshare on compute node  	/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63
+
+ |- Get input and restart data
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VGRATCLIM.nc  <--  unit.91
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VLTCLIM.nc  <--  unit.90
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63_TSLCLIM2.nc  <--  unit.92
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63L47_jan_spec.nc  <--  unit.23
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_jan_surf.nc  <--  unit.24
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/surrta_data  <--  rrtadata
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/rrtmg_lw.nc  <--  rrtmg_lw.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/ECHAM6_CldOptProps.nc  <--  ECHAM6_CldOptProps.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1979.nc  <--  ozon1979
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1980.nc  <--  ozon1980
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1981.nc  <--  ozon1981
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1982.nc  <--  ozon1982
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1979.nc  <--  aero_fine_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1980.nc  <--  aero_fine_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1981.nc  <--  aero_fine_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1982.nc  <--  aero_fine_1982.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc  <--  aero_coarse_1982.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc  <--  aero_farir_1982.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1979.nc  <--  strat_aerosol_ir_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1980.nc  <--  strat_aerosol_ir_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1981.nc  <--  strat_aerosol_ir_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1982.nc  <--  strat_aerosol_ir_1982.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1979.nc  <--  strat_aerosol_sw_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1980.nc  <--  strat_aerosol_sw_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1981.nc  <--  strat_aerosol_sw_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1982.nc  <--  strat_aerosol_sw_1982.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1979.nc  <--  sst1979
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1980.nc  <--  sst1980
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1981.nc  <--  sst1981
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1982.nc  <--  sst1982
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1979.nc  <--  ice1979
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1980.nc  <--  ice1980
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1981.nc  <--  ice1981
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1982.nc  <--  ice1982
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1979.nc  <--  swflux_1979.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1980.nc  <--  swflux_1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1981.nc  <--  swflux_1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1982.nc  <--  swflux_1982.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/greenhouse_rcp45.nc  <--  greenhouse_gases.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/echam6/rerun_f01_echam6_amip_T63_echam_19801231  >>>  rerun_f01_echam6_amip_T63_echam
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/echam6/rerun_f01_echam6_amip_T63_co2_19801231  >>>  rerun_f01_echam6_amip_T63_co2
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/input/jsbach/lctlib_nlct21.def  <--  lctlib.def
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/jsbach_T63GR15_11tiles_1976.nc  <--  jsbach.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1981.nc  <--  landuseTransitions.1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1980.nc  <--  landuseTransitions.1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1981.nc  <--  landuseHarvest.1981.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1980.nc  <--  landuseHarvest.1980.nc
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_jsbach_19801231  >>>  rerun_f01_echam6_amip_T63_jsbach
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_veg_19801231  >>>  rerun_f01_echam6_amip_T63_veg
+   |- get_file:  /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/restart/jsbach/rerun_f01_echam6_amip_T63_surf_19801231  >>>  rerun_f01_echam6_amip_T63_surf
+
+ |- Provide configuration files (namelists, XML, etc.)
+* ----------------------------------------------------------------------
+* Namelist of ECHAM: namelist.echam
+* ----------------------------------------------------------------------
+&parctl
+  NPROCA       = 24
+  NPROCB       = 16
+/
+&runctl
+  LTIMER         = .false.
+  LRESUME        = .TRUE.
+  OUT_DATAPATH   = './' 
+  OUT_EXPNAME    = 'f01_echam6_amip_T63'
+  OUT_FILETYPE   = 1
+  OUT_ZTYPE      = 0
+  RERUN_FILETYPE = 4
+  LAMIP          = true
+  DT_START       = 0000,00,00,00,00,00
+  DT_STOP        = 1982,01,01,00,00,00
+  DELTA_TIME     = 600.
+  PUTDATA        = 6,'hours','first',0
+  PUTRERUN       = 1,'years','last',0
+  TRIGFILES      = 1,'months','first',0
+  NPROMA         = 72
+  LIPCC          = .true.
+  NO_CYCLES      = 1
+  LMIDATM        = .true.
+  LDEBUGEV       = .false.
+  LCOUPLE_CO2    = .false.
+/
+&dynctl
+  ENSTDIF        = 1.0
+/
+&physctl
+  LCOVER       = .false.
+/
+&gwsctl 
+  LRMSCON_LAT  = .false. 
+/
+&submodelctl
+  LCO2         = .false.
+  LMETHOX      = .true.
+  LTRANSDIAG   = .true.
+/
+&radctl
+  IAERO        = 5
+  IO3          = 4
+  IGHG         = 1
+  ISOLRAD      = 1
+  ICFC         = 4
+  ICH4         = 4
+  IN2O         = 4
+  ICO2         = 4
+/
+&cospctl
+ LOCOSP        = .false.
+/
+&co2ctl
+ lco2_scenario = .true.
+/
+ 
+* ----------------------------------------------------------------------
+*    end of namelist.echam
+* ----------------------------------------------------------------------
+
+* ----------------------------------------------------------------------
+* Namelist of JSBACH: namelist.jsbach
+* ----------------------------------------------------------------------
+&jsbach_ctl
+  STANDALONE         = .false.
+  NTILES             = 11
+  USE_BETHY          = .true.
+  USE_PHENOLOGY      = .true.
+  USE_ALBEDO         = .true.
+  USE_DYNVEG         = .true.
+  WITH_NITROGEN      = .false.
+  LCC_FORCING_TYPE   = "transitions"
+  FILE_TYPE          = "GRIB"
+  LPOST_ECHAM        = .false.
+  DEBUG              = .false.
+  TEST_CCONSERVATION = .true.
+  READ_COVER_FRACT   = .false.
+/
+&cbalance_ctl
+  READ_CPOOLS = .false.
+  READ_NPOOLS = .false.
+  READ_NDEPO  = .false.
+/
+&dynveg_ctl
+  READ_FPC           = .false.
+  DYNVEG_FEEDBACK    = .false.
+/
+&climbuf_ctl
+  INIT_RUNNING_MEANS = .false.
+/
+* ----------------------------------------------------------------------
+*    end of namelist.jsbach
+* ----------------------------------------------------------------------
+
+List of files in working directory 
+/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/work 
+at Thu Jan 18 21:26:05 CET 2018:
+total 405125
+drwxrwxr-x 2 earnest earnest     40960 Jan 18 21:26 .
+drwxrwxr-x 9 earnest earnest      4096 Jan 18 20:46 ..
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_coarse_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_coarse_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_coarse_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_coarse_1982.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_farir_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_farir_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_farir_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 aero_farir_1982.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_lw_b16_coa.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:26 aero_fine_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1979.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:26 aero_fine_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1980.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:26 aero_fine_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1981.nc
+lrwxrwxrwx 1 earnest earnest       123 Jan 18 21:26 aero_fine_1982.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/aero2/T63_aeropt_kinne_sw_b14_fin_1982.nc
+lrwxrwxrwx 1 earnest earnest        97 Jan 18 21:26 echam6 -> /nird/home/earnest/models/MPI-ESM/mpiesm-1.echam6/Sources/fram-intel/bin/echam6_c171107o2_noNud.x
+lrwxrwxrwx 1 earnest earnest        99 Jan 18 21:26 ECHAM6_CldOptProps.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/ECHAM6_CldOptProps.nc
+lrwxrwxrwx 1 earnest earnest        97 Jan 18 21:26 greenhouse_gases.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/greenhouse_rcp45.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 ice1979 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1979.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 ice1980 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1980.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 ice1981 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1981.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 ice1982 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sic_1982.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:26 jsbach.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/jsbach_T63GR15_11tiles_1976.nc
+lrwxrwxrwx 1 earnest earnest       114 Jan 18 21:26 landuseHarvest.1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       114 Jan 18 21:26 landuseHarvest.1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_harvest_T63_1981.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 landuseTransitions.1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       118 Jan 18 21:26 landuseTransitions.1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/jsbach/T63/land_use/LUH_transitions_T63_1981.nc
+lrwxrwxrwx 1 earnest earnest        89 Jan 18 21:26 lctlib.def -> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/input/jsbach/lctlib_nlct21.def
+-rw-rw-r-- 1 earnest earnest      1062 Jan 18 21:26 namelist.echam
+-rw-rw-r-- 1 earnest earnest       622 Jan 18 21:26 namelist.jsbach
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:26 ozon1979 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1979.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:26 ozon1980 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1980.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:26 ozon1981 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1981.nc
+lrwxrwxrwx 1 earnest earnest       112 Jan 18 21:26 ozon1982 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/ozone2/T63_ozone_CMIP5_1982.nc
+-rw-r--r-- 1 earnest earnest   2267260 Jan 18 21:24 rerun_f01_echam6_amip_T63_co2
+-rw-r--r-- 1 earnest earnest 290675172 Jan 18 21:24 rerun_f01_echam6_amip_T63_echam
+-rw-r--r-- 1 earnest earnest  57748104 Jan 18 21:24 rerun_f01_echam6_amip_T63_jsbach
+-rw-r--r-- 1 earnest earnest  33686112 Jan 18 21:24 rerun_f01_echam6_amip_T63_surf
+-rw-r--r-- 1 earnest earnest  37742036 Jan 18 21:24 rerun_f01_echam6_amip_T63_veg
+lrwxrwxrwx 1 earnest earnest        89 Jan 18 21:26 rrtadata -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/surrta_data
+lrwxrwxrwx 1 earnest earnest        89 Jan 18 21:26 rrtmg_lw.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/rrtmg_lw.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 sst1979 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1979.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 sst1980 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1980.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 sst1981 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1981.nc
+lrwxrwxrwx 1 earnest earnest       108 Jan 18 21:26 sst1982 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/amip2/T63_amip2sst_1982.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_ir_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1979.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_ir_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_ir_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1981.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_ir_1982.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_ir_T63_1982.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_sw_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1979.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_sw_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1980.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_sw_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1981.nc
+lrwxrwxrwx 1 earnest earnest       127 Jan 18 21:26 strat_aerosol_sw_1982.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/volcano_aerosols/strat_aerosol_sw_T63_1982.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:26 swflux_1979.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1979.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:26 swflux_1980.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1980.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:26 swflux_1981.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1981.nc
+lrwxrwxrwx 1 earnest earnest       116 Jan 18 21:26 swflux_1982.nc -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/solar_irradiance/swflux_14band_1982.nc
+lrwxrwxrwx 1 earnest earnest       100 Jan 18 21:26 unit.23 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63L47_jan_spec.nc
+lrwxrwxrwx 1 earnest earnest       101 Jan 18 21:26 unit.24 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_jan_surf.nc
+lrwxrwxrwx 1 earnest earnest       100 Jan 18 21:26 unit.90 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VLTCLIM.nc
+lrwxrwxrwx 1 earnest earnest       102 Jan 18 21:26 unit.91 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63GR15_VGRATCLIM.nc
+lrwxrwxrwx 1 earnest earnest        97 Jan 18 21:26 unit.92 -> /cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/echam6/T63/T63_TSLCLIM2.nc
++ date +%y%m%d_%H%M%S
++ LID=180118_212605
++ export LID
++ outlogfile=/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_log_180118_212605
++ outerrfile=/cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_err_180118_212605
++ printf '\n%s\n' ' |---------------------------------------------------------|'
+
+ |---------------------------------------------------------|
++ printf '%s\n' ' |- Model launched at $(date)                              '
+ |- Model launched at $(date)                              
++ printf '%s\n\n' ' |---------------------------------------------------------|'
+ |---------------------------------------------------------|
+
++ rm -f mpmd.lst
++ n=0
++ (( n2 = n + nprocatm -1 ))
++ echo '-0 ./echam6'
++ 1>> mpmd.lst
++ paffopt=' -n 384 '
++ /usr/bin/srun -n 384 ./echam6
++ 1> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_log_180118_212605 2> /cluster/work/users/earnest/mpiexm_exp/f01_echam6_amip_T63/scripts/out_f01_echam6_amip_T63_err_180118_212605
+slurmstepd: error: *** JOB 31107 ON c15-1 CANCELLED AT 2018-01-18T21:34:13 ***
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+31107        f01_amip_+        384                                             00:08:13      0:0 
+31107.batch       batch         32        1   00:00:03          0   00:00:03   00:08:14     0:15 
+31107.0          echam6        384      384   00:07:57         73   00:08:10   00:08:24      0:6 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+31107                                                                            
+31107.batch       8024K          0      8022K        0              0          0 
+31107.0         946069K          0  92215.46K       2K            258          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+31107                                                                                                 
+31107.batch       431.52M               0        431.52M      426.34M                0        426.34M 
+31107.0           805.42M               0          3.97M    13958.68M                0         36.41M 
+
+Job 31107 completed at Thu Jan 18 21:34:35 CET 2018

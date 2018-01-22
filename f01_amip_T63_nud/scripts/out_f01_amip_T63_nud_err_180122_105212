@@ -1,0 +1,122 @@
+srun: Warning: can't honor --ntasks-per-node set to 32 which doesn't match the requested tasks 192 with the number of requested nodes 8. Ignoring --ntasks-per-node.
+
+ echam6 MPI interface runtime information:
+  Used MPI version: 3.1
+  Run on 192 processors.
+ 
+ 
+ 
+ ===========================================================
+ 
+ ECHAM - Release 6.1.00
+ Copyright by Max-Planck-Institute for Meteorology, 2012
+ Read master.f90 and mpi-m_sla_201202.pdf before using ECHAM6
+ 
+ ===========================================================
+ 
+ 
+ Opened namelist file namelist.echam
+ Atmosphere standard output is assigned to file echam6.log.
+ 
+ ======================================================================
+ Start initialization in control
+ ======================================================================
+ Automatic determined byte size of types for I/O:
+ INTEGER                :   4
+ INTEGER (4 byte range) :   4
+ INTEGER (8 byte range) :   8
+ REAL                   :   8
+ REAL (single)          :   4
+ REAL (double)          :   8
+ LOGICAL                :   4
+ 
+ Automatic determined machine constants (8 byte REAL):
+ Epsilon                      =     0.222044604925031E-15
+ Precision                    =     0.222044604925031E-15
+ Safe minimum                 =     0.222507385850720-307
+ Reciprocal of safe minimum   =     0.449423283715579+308
+ Underflow threshold          =     0.222507385850720-307
+ 
+ Number of digits in mantissa =     53
+ Base                         =      2
+ Minimum exponent             =  -1021
+ Largest exponent             =   1024
+ 
+ Rounding mode is chopping.
+ 
+ Namelist file namelist.echam reopened
+ Read date (initial/restart): 31. Dec     1977 23:50:00
+ Basic initialization of time manager <echam time manager> done.
+ Experiment resumed at: 31. Dec     1981 23:50:00
+ Set manager to resumed time step + 1.
+ Namelist file namelist.echam reopened
+ Time step and start date evaluation done.
+ Namelist file namelist.echam already opened, rewind file to beginning
+ Nudging Version E5R1.04 August-2002 (kirchner@dkrz.de)
+  File name template NetCDF: ndg_%y4%m2.nc
+ 
+ Use standard ECHAM SST
+ Nudging options:
+   pattern assimilation            LNUDGPAT  =: F
+   Adjust date/time                LNUDGINI  =: F
+   Implicit method                 LNUDGIMP  =: T
+   Debbugging                      LNUDGDBX  =: F
+   Store reference data in output  LNUDGWOBS =: F
+   Calculate SITE measure          LSITE     =: F
+   Use nudging data cyclic         LNUDGCLI  =: F
+   Linear time interpolation       LTINTLIN  =: F
+ Time window options ....
+     Linear damping in time        LDAMPLIN  =: T
+     Reduce damping between reference times (fraction): 1.000000
+     Damping radius (fraction): 0.500000
+ Nudging options for input data format:
+                                INUDGFORMAT  =: 2
+ Reset nudging start date from namelist:  1. Jan     1982 00:00:00
+ Reset nudging stop date from namelist:  1. Jan     1983 00:00:00
+ Nudging rerun time adjustment ...
+    Adjust date using file:: ndg_198201.nc
+
+================================================================================
+
+FATAL ERROR in NudgingInit: Nudging data file not found.
+ FINISH called from PE: 0
+
+--------------------------------------------------------------------------------
+
+
+Image              PC                Routine            Line        Source             
+echam6_c171107o2_  00000000012402DD  Unknown               Unknown  Unknown
+echam6_c171107o2_  000000000040EDB7  mo_exception_mp_f          96  mo_exception.f90
+echam6_c171107o2_  0000000000B7500D  mo_nudging_init_m         398  mo_nudging_init.f90
+echam6_c171107o2_  0000000000490E65  initialize_                93  initialize.f90
+echam6_c171107o2_  000000000044E094  control_                  174  control.f90
+echam6_c171107o2_  000000000040E34D  MAIN__                    209  master.f90
+echam6_c171107o2_  000000000040DCEE  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD1DBCAFC05  __libc_start_main     Unknown  Unknown
+echam6_c171107o2_  000000000040DBE9  Unknown               Unknown  Unknown
+forrtl: error (76): Abort trap signal
+Image              PC                Routine            Line        Source             
+echam6_c171107o2_  0000000001246BF4  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AD1DB77F5E0  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD1DBCC31F7  gsignal               Unknown  Unknown
+libc-2.17.so       00002AD1DBCC48E8  abort                 Unknown  Unknown
+echam6_c171107o2_  0000000001240286  Unknown               Unknown  Unknown
+echam6_c171107o2_  000000000040EDB7  mo_exception_mp_f          96  mo_exception.f90
+echam6_c171107o2_  0000000000B7500D  mo_nudging_init_m         398  mo_nudging_init.f90
+echam6_c171107o2_  0000000000490E65  initialize_                93  initialize.f90
+echam6_c171107o2_  000000000044E094  control_                  174  control.f90
+echam6_c171107o2_  000000000040E34D  MAIN__                    209  master.f90
+echam6_c171107o2_  000000000040DCEE  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD1DBCAFC05  __libc_start_main     Unknown  Unknown
+echam6_c171107o2_  000000000040DBE9  Unknown               Unknown  Unknown
+srun: error: c39-1: task 0: Aborted (core dumped)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 31929.0 ON c39-1 CANCELLED AT 2018-01-22T11:15:58 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+echam6_c171107o2_  0000000001320311  Unknown               Unknown  Unknown
+echam6_c171107o2_  000000000131E44B  Unknown               Unknown  Unknown
+echam6_c171107o2_  00000000012B5A14  Unknown               Unknown  Unknown
+echam6_c171107o2_  00000000012B5826  Unknown               Unknown  Unknown
+echam6_c171107o2_  000000000123EB69  Unknown               Unknown  Unknown
+echam6_c171107o2_  00000000012468FC  Unknown               Unknown  Unknown

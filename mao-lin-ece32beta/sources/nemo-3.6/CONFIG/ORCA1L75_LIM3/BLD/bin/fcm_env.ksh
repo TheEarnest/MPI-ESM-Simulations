@@ -1,0 +1,1 @@
+/home/uib/mde021/mao-lin-ece32beta/sources/nemo-3.6/CONFIG/ORCA1L75_LIM3/BLD/fcm_env.sh

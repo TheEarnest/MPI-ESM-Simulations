@@ -761,7 +761,7 @@ fi
 
 #preparing nudging data 
 
-ln -sf /cluster/work/users/earnest/stercp_exp/t1SP_a7/SP_nudging/Data/ECHAM6/198201/ndg_* ${archive}/${expid}/work/
+ln -sf /cluster/work/users/earnest/stercp_exp/t1SP_a9/SP_nudging/Data/ECHAM6/198201/ndg_* ${archive}/${expid}/work/
 
 #
 #-- restart files for ECHAM

@@ -75,7 +75,7 @@ atmmonprefix="echa"
 atmids="01 02 03 04 05"
 UsingAreaWeight=".TRUE." # the map ovrride all other configurations 
 #WeightingMapName=WeightingMap4MPIOM_Global_5.ext8
-WeightingMapName=WeightingMap4MPIOM_NA_SPG_5.ext8
+WeightingMapName=WeightingMap4MPIOM_NA_SPG_5_InterpSmoothing.ext8
 #WeightingMapName=WeightingMap4MPIOM_ALT_5.ext8
 #WeightingMapName=WeightingMap4MPIOM_0.999
 mFDEmd_Ma=1;mFDEmd_Mo=1;mFDEmd_En=1;mFDEmd_BC=1;  
@@ -1508,7 +1508,7 @@ cat -> namelist.echam << EOF
   ICH4    = ${ich4:-3}
   IN2O    = ${in2o:-3}
   ICO2    = ${ico2:-2}
-  CO2VMR  = ${co2vmr:-339.000000e-6}
+  CO2VMR  = ${co2vmr:-339.000000${aid}e-6}
   CH4VMR  = ${ch4vmr:-1.54700000e-6}
   N2OVMR  = ${n2ovmr:-0.30120000e-6}
   !CECC    = 0.0167643

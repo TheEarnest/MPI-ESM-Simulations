@@ -974,7 +974,8 @@ cat -> namelist.echam << EOF
   DELTA_TIME     = ${nadt}.
   PUTDATA        = ${dt_write_atm},'hours','first',0
   PUTRERUN       = ${put_rerun}
-  TRIGFILES      = 1,'months','first',0
+  !TRIGFILES      = 1,'months','first',0
+  TRIGFILES      = ${dt_write_atm},'hours','first',0
   lnudge         = .true.
   LIPCC          = .true.
   NO_CYCLES      = ${no_cycles:-1}

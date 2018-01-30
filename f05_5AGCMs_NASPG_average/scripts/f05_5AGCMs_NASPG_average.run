@@ -117,7 +117,7 @@ export verbose=no                # yes/no
 #
 res_atm=T63                 # grid acronym (T21/T31/T42/T63/T85/T106/T127/T159)
 vres_atm=47                 # number of vertical levels
-atmvers=c171031o2          # model version (used in executable name)
+atmvers=c2016a_180130o2          # model version (used in executable name)
 dt_write_atm=24              # time interval of output writing in hours
 lco2=false                  # true: prognostic CO2 mass mixing ratio
 nml_suf_echam=historical-LR # namelist file name suffix (in adjunct_files)
@@ -176,7 +176,7 @@ oce_restart_filetype=nc  # format of model restart file (ex/nc)
 #ocevers=c170415mAo3
 #ocevers=c170415mASOB
 #ocevers=c171031o2
-ocevers=c171031o2_averaging
+ocevers=c2016a_180130o2_averaging
 #
 #-- HAMOCC
 #
@@ -190,7 +190,7 @@ nml_suf_hamocc=c5-LR     # tag for namelist (in adjunct_files)
 set_enstdif="[[ \$(echo \${startdate} | cut -c1-4) = YYYY ]] && enstdif=1.0001"
 
 
-cplversion=c171031o2
+cplversion=c2016a_180130o2
 #-- Executable name as stored in .../bin
 
 
@@ -853,7 +853,9 @@ exphome=${data}/${expid}          # Root directory of the experiment (data)
   }
 export bindir=${archive}/${expid}/bin      # Directory of the executables
 if [ ! -d ${bindir}  ]; then mkdir -p ${bindir}; fi
-cp -rfv ${compile_path}/*${atmvers}*  ${bindir}                #   */
+cp -fv ${compile_path}/${ocebin}  ${bindir}                
+cp -fv ${compile_path}/${atmbin}  ${bindir}
+cp -fv ${compile_path}/${cplbin}  ${bindir}
 cp -rfv ${compile_path}/${nc2oasisbin} ${bindir}
 
 export inpdir=${exphome}/input    # Directory of the input files
@@ -1508,7 +1510,7 @@ cat -> namelist.echam << EOF
   ICH4    = ${ich4:-3}
   IN2O    = ${in2o:-3}
   ICO2    = ${ico2:-2}
-  CO2VMR  = ${co2vmr:-339.000000${aid}e-6}
+  CO2VMR  = ${co2vmr:-339.0000${aid}e-6}
   CH4VMR  = ${ch4vmr:-1.54700000e-6}
   N2OVMR  = ${n2ovmr:-0.30120000e-6}
   !CECC    = 0.0167643

@@ -2,7 +2,8 @@
 #SBATCH --account=nn9385k
 #SBATCH --job-name=f01_nudging_test
 #SBATCH --output=r_f01_nudging_test_out_%j
-#SBATCH --time=0-0:80:0
+#SBATCH --qos=devel
+#SBATCH --time=0-0:50:0
 #SBATCH --nodes=8 --ntasks-per-node=32
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=earnestshen@gmail.com
@@ -188,8 +189,8 @@ export file_permits=644
 integer nproca_atm nprocb_atm nproma_atm nthreadatm
 
 nproca_atm=16  # total number of MPI procs:
-nprocb_atm=12   #    nproca_atm * nprocb_atm
-nthreadatm=2   # number of openMP threads (overwrites OMP_NUM_THREADS)
+nprocb_atm=16   #    nproca_atm * nprocb_atm
+nthreadatm=1   # number of openMP threads (overwrites OMP_NUM_THREADS)
 nproma_atm=72
 
 #------------------------------------------------------------------------------
@@ -1031,7 +1032,7 @@ cat -> namelist.echam << EOF
   LTINTLIN        = .false.
   LDAMPLIN        = .true.
   NUDGDAMP        = 1.
-  ndg_file_nc    = "ndg_%y4%m2.nc"
+  ndg_file_nc    = "ndg_%y4%m2%d2%h2.nc"
 /
  
 EOF
@@ -1214,9 +1215,9 @@ printf "%s\n\n" " |---------------------------------------------------------|"
 
 
     rm -f mpmd.lst
-    n=0
-    (( n2 = n + nprocatm -1 ))
-    echo "${n1}-${n} ./${atmexec}" >> mpmd.lst
+    #n=0
+    #(( n2 = n + nprocatm -1 ))
+    #echo "${n1}-${n} ./${atmexec}" >> mpmd.lst
 
     paffopt=" -n ${nprocatm} "
  time  ${MPIBIN} ${paffopt} ./${atmexec}  1> ${outlogfile} 2> ${outerrfile}  || {

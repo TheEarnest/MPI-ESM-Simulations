@@ -117,7 +117,7 @@ export verbose=no                # yes/no
 #
 res_atm=T63                 # grid acronym (T21/T31/T42/T63/T85/T106/T127/T159)
 vres_atm=47                 # number of vertical levels
-atmvers=c171031o2          # model version (used in executable name)
+atmvers=c180129o2          # model version (used in executable name)
 dt_write_atm=24              # time interval of output writing in hours
 lco2=false                  # true: prognostic CO2 mass mixing ratio
 nml_suf_echam=historical-LR # namelist file name suffix (in adjunct_files)
@@ -176,7 +176,7 @@ oce_restart_filetype=nc  # format of model restart file (ex/nc)
 #ocevers=c170415mAo3
 #ocevers=c170415mASOB
 #ocevers=c171031o2
-ocevers=c171031o2_sampling_debug
+ocevers=c180129o2_sampling_debug
 #
 #-- HAMOCC
 #
@@ -190,7 +190,7 @@ nml_suf_hamocc=c5-LR     # tag for namelist (in adjunct_files)
 set_enstdif="[[ \$(echo \${startdate} | cut -c1-4) = YYYY ]] && enstdif=1.0001"
 
 
-cplversion=c171031o2
+cplversion=c180129o2
 #-- Executable name as stored in .../bin
 
 

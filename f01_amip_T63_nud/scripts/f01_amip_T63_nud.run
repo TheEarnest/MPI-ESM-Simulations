@@ -83,7 +83,7 @@ export verbose=yes                # yes/no
 #
 res_atm=T63             # grid acronym (T21/T31/T42/T63/T85/T106/T127/T159)
 vres_atm=47             # number of vertical levels (19/31/47/95)
-atmvers=c171107o2_noNud # atmosphere model version (used in executable name)
+atmvers=c2016a_180130o2 # atmosphere model version (used in executable name)
 atm_out_filetype=2      # output file format:      1/2 = GRIB (def)/NETCDF
 atm_out_ztype=0         # output file compression: 0/1/2 = NONE/SZIP(def)/2=ZIP
 dt_write_atm=6          # time interval of output writing in hours
@@ -762,7 +762,7 @@ fi
 
 #preparing nudging data 
 
-ln -sf /cluster/work/users/earnest/stercp_exp/t1SP_a9/SP_nudging/Data/ECHAM6/198201/ndg_* ${archive}/${expid}/work/
+ln -sf /cluster/work/users/earnest/mpiexm_exp/WeightMap_GR15/ndg_* ${archive}/${expid}/work/
 
 #
 #-- restart files for ECHAM
@@ -1032,7 +1032,7 @@ cat -> namelist.echam << EOF
   LTINTLIN        = .false.
   LDAMPLIN        = .true.
   NUDGDAMP        = 1.
-  ndg_file_nc    = "ndg_%y4%m2%d2%h2.nc"
+  ndg_file_nc    = "ndg_%y4%m2%d2_%h2.nc"
 /
  
 EOF
@@ -1214,7 +1214,7 @@ printf "%s\n"   " |- Model launched at \$(date)                              "
 printf "%s\n\n" " |---------------------------------------------------------|"
 
 
-    rm -f mpmd.lst
+    #rm -f mpmd.lst
     #n=0
     #(( n2 = n + nprocatm -1 ))
     #echo "${n1}-${n} ./${atmexec}" >> mpmd.lst

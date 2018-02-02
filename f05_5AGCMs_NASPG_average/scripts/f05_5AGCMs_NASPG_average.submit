@@ -1,0 +1,19 @@
+#!/bin/ksh
+#SBATCH --account=nn9385k
+#SBATCH --job-name=f05_5AGCMs_NASPG_average
+#SBATCH --output=r_f05_5AGCMs_NASPG_average_out_%j
+#SBATCH --time=2-0:00:00
+#SBATCH --nodes=30 --ntasks-per-node=32
+
+
+re_run_counter=60
+while (( re_run_counter > 0 )); do  # year counter
+  re_run_counter=`echo "scale=0;(${re_run_counter}-1)" | bc -l `
+  echo $re_run_counter
+
+  cd /cluster/work/users/earnest/mpiexm_exp/f05_5AGCMs_NASPG_average/scripts
+  ./f05_5AGCMs_NASPG_average.run
+
+done
+
+exit 

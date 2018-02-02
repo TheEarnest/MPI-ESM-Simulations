@@ -1,9 +1,9 @@
 #!/bin/ksh
-#SBATCH --account=nn9385k
-#SBATCH --job-name=f05_5AGCMs_NASPG_average
-#SBATCH --output=r_f05_5AGCMs_NASPG_average_out_%j
-#SBATCH --time=0-0:80:0
-#SBATCH --nodes=30 --ntasks-per-node=32
+##SBATCH --account=nn9385k
+##SBATCH --job-name=f05_5AGCMs_NASPG_average
+##SBATCH --output=r_f05_5AGCMs_NASPG_average_out_%j
+##SBATCH --time=2-0:00:00
+##SBATCH --nodes=30 --ntasks-per-node=32
 
 ###############################################################################
 #                              f05_5AGCMs_NASPG_average.run
@@ -241,6 +241,13 @@ dto2a=86400             # time step from ocean to atmosphere (86400/43200) [s]
 
 timtranso2a=INSTANT     # INSTANT / AVERAGE
 export=EXPORTED         # EXPORTED / EXPOUT
+
+
+#re_run_counter=60
+#while (( re_run_counter > 0 )); do  # year counter 
+#  re_run_counter=`echo "scale=0;(${re_run_counter}-1)" | bc -l `
+#  echo $re_run_counter
+
 
 
 #------------------------------------------------------------------------------
@@ -1510,7 +1517,7 @@ cat -> namelist.echam << EOF
   ICH4    = ${ich4:-3}
   IN2O    = ${in2o:-3}
   ICO2    = ${ico2:-2}
-  CO2VMR  = ${co2vmr:-339.0000${aid}e-6}
+  CO2VMR  = ${co2vmr:-339.000000e-6}
   CH4VMR  = ${ch4vmr:-1.54700000e-6}
   N2OVMR  = ${n2ovmr:-0.30120000e-6}
   !CECC    = 0.0167643
@@ -2534,7 +2541,8 @@ if [[ `later_date -- ${nextdate} ${findate}` = ${nextdate} ]]; then
   echo "$(date +"${datefmt}") :  Experiment over" >> ${expid}.log
   chmod g-w ${outdir}/*/*.grb ${outdir}/*/*.nc || true
 else
-  sbatch ${job} & 
+  #sbatch ${job} & 
+  echo $re_run_counter
 fi
 
 ###############################################################################
@@ -2600,6 +2608,8 @@ fi
 wait; ${job_account}
 
 printf "\n%s\t%s\n"  " End of script at " "$(date +'%b %d %T') on $(hostname)"
+
+#done
 
 exit
 

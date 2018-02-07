@@ -8,3 +8,7 @@ restart_*
 */scripts/r_*
 */scripts/*.post.*
 WeightMap_GR15
+*/temp*
+*/tmp*
+*/*/temp*
+*/*/tmp*

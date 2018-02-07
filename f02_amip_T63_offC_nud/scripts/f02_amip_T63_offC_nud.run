@@ -1,12 +1,12 @@
 #!/bin/ksh
-#SBATCH --account=nn9385k
-#SBATCH --job-name=f02_nudging_test
-#SBATCH --output=r_f02_nudging_test_out_%j
-#SBATCH --qos=devel
-#SBATCH --time=0-0:50:0
-#SBATCH --nodes=4 --ntasks-per-node=32
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=earnestshen@gmail.com
+##SBATCH --account=nn9385k
+##SBATCH --job-name=f02_nudging_test
+##SBATCH --output=r_f02_nudging_test_out_%j
+###SBATCH --qos=devel
+##SBATCH --time=0-0:30:0
+##SBATCH --nodes=4 --ntasks-per-node=32
+##SBATCH --mail-type=ALL
+##SBATCH --mail-user=earnestshen@gmail.com
 
 ###############################################################################
 #                              f02_amip_T63_offC_nud.run
@@ -161,8 +161,8 @@ final_date=1982-12-31
 
 integer nyear nmonth nday nhour nminute nsecond
 
-nyear=1          # number of years per run
-nmonth=0         # number of months per run
+nyear=0          # number of years per run
+nmonth=1         # number of months per run
 nday=0           # number of days per run
 nhour=0          # number of hours per run
 nminute=0        # number of minutes per run
@@ -1017,7 +1017,7 @@ cat -> namelist.echam << EOF
 &NDGCTL
   DT_NUDG_START   = ${nudging_startdate}
   DT_NUDG_STOP    = ${nudging_enddate}
-  LNUDGDBX        = .false.
+  LNUDGDBX        = .true.
   LNUDGINI        = .false.
   inudgformat   = 2
   NUDGLMIN      = 1
@@ -1026,7 +1026,7 @@ cat -> namelist.echam << EOF
   NUDGSMAX      = 63
   LNUDGIMP      = .true.
   NUDGD         = 31*0.579
-  NUDGT         = 31*1.16
+  NUDGT         = 31*1.116
   NUDGV         = 31*4.63
   NUDGP         = 1.16
   LTINTLIN        = .false.
@@ -1604,7 +1604,8 @@ if [[ `later_date -- ${nextdate} ${findate}` = ${nextdate} ]]; then
   echo "$(date +"${datefmt}") :  Experiment over" >> ${expid}.log
   chmod g-w ${outdir}/*/*.grb ${outdir}/*/*.nc || true
 else
-  qsub ${job}
+  #qsub ${job}
+  echo 'well ...........'
 fi
 
 ###############################################################################

@@ -82,8 +82,8 @@ export verbose=yes                # yes/no
 #
 res_atm=T63             # grid acronym (T21/T31/T42/T63/T85/T106/T127/T159)
 vres_atm=47             # number of vertical levels (19/31/47/95)
-atmvers=c171107o2_noNud # atmosphere model version (used in executable name)
-atm_out_filetype=1      # output file format:      1/2 = GRIB (def)/NETCDF
+atmvers=c2016a_180131o0 # atmosphere model version (used in executable name)
+atm_out_filetype=2      # output file format:      1/2 = GRIB (def)/NETCDF
 atm_out_ztype=0         # output file compression: 0/1/2 = NONE/SZIP(def)/2=ZIP
 dt_write_atm=6          # time interval of output writing in hours
 res_oce_pretend=GR15    # resolution of pretended ocean if alone_as_coupled 

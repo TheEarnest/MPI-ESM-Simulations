@@ -1,0 +1,23 @@
+#!/bin/ksh
+#SBATCH --account=nn9385k
+#SBATCH --job-name=f02_offC_nudging_test
+#SBATCH --output=r_f02_offC_nudging_test_out_%j
+#SBATCH --time=7-0:00:00
+#SBATCH --nodes=4 --ntasks-per-node=32
+
+re_run_counter=60000
+while (( re_run_counter > 0 )); do  # year counter
+  re_run_counter=`echo "scale=0;(${re_run_counter}-1)" | bc -l `
+  echo $re_run_counter
+
+  cd /cluster/work/users/earnest/mpiexm_exp/f02_amip_T63_offC_nud/scripts
+  echo "19820101 2" > ./f02_amip_T63_offC_nud.date
+  ./f02_amip_T63_offC_nud.run
+
+  sleep 10s
+done
+
+exit
+
+
+

@@ -312,12 +312,12 @@ integer nproca_atm nprocb_atm nproma_atm nthreadatm
 integer nprocoasis
 
 
-nproca_atm=14  # total number of MPI procs: 
-nprocb_atm=12  #      nproca_atm*nprocb_atm
+nproca_atm=9  # total number of MPI procs: 
+nprocb_atm=6  #      nproca_atm*nprocb_atm
 nthreadatm=1   # number of openMP threads (overwrites OMP_NUM_THREADS)
 nproma_atm=72
 
-nproca_oce=17  # total number of MPI procs:
+nproca_oce=7  # total number of MPI procs:
 nprocb_oce=7   #      nproca_oce*nprocb_oce
 nthreadoce=1   # number of openMP threads (overwrites OMP_NUM_THREADS) 
 

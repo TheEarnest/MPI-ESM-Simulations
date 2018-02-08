@@ -312,12 +312,12 @@ integer nproca_atm nprocb_atm nproma_atm nthreadatm
 integer nprocoasis
 
 
-nproca_atm=9  # total number of MPI procs: 
-nprocb_atm=6  #      nproca_atm*nprocb_atm
+nproca_atm=12  # total number of MPI procs: 
+nprocb_atm=7  #      nproca_atm*nprocb_atm
 nthreadatm=1   # number of openMP threads (overwrites OMP_NUM_THREADS)
 nproma_atm=72
 
-nproca_oce=7  # total number of MPI procs:
+nproca_oce=13  # total number of MPI procs:
 nprocb_oce=7   #      nproca_oce*nprocb_oce
 nthreadoce=1   # number of openMP threads (overwrites OMP_NUM_THREADS) 
 
@@ -1517,7 +1517,7 @@ cat -> namelist.echam << EOF
   ICH4    = ${ich4:-3}
   IN2O    = ${in2o:-3}
   ICO2    = ${ico2:-2}
-  CO2VMR  = ${co2vmr:-339.000000e-6}
+  CO2VMR  = ${co2vmr:-339.000100e-6}
   CH4VMR  = ${ch4vmr:-1.54700000e-6}
   N2OVMR  = ${n2ovmr:-0.30120000e-6}
   !CECC    = 0.0167643

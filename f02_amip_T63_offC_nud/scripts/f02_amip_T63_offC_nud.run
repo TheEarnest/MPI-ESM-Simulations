@@ -1025,10 +1025,10 @@ cat -> namelist.echam << EOF
   NUDGSMIN      = 0
   NUDGSMAX      = 63
   LNUDGIMP      = .true.
-  NUDGD         = 31*0.579
-  NUDGT         = 31*1.116
-  NUDGV         = 31*4.63
-  NUDGP         = 1.16
+  NUDGD         = 31*5.79
+  NUDGT         = 31*11.16
+  NUDGV         = 31*46.3
+  NUDGP         = 11.6
   LTINTLIN        = .false.
   LDAMPLIN        = .true.
   NUDGDAMP        = 1.
@@ -1207,7 +1207,8 @@ set -ex
 export LID="`date +%y%m%d_%H%M%S`"
 outlogfile=${jobdir}/out_${expid}_log_$LID
 outerrfile=${jobdir}/out_${expid}_err_$LID
-echo 'test' > is_ECHAM6_nudging_data_ready
+echo 'test' > is_cam_nudging_data_ready_check
+ln -sf is_cam_nudging_data_ready_check is_ECHAM6_nudging_data_ready
 
 printf "\n%s\n" " |---------------------------------------------------------|"
 printf "%s\n"   " |- Model launched at \$(date)                              "

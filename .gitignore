@@ -12,3 +12,7 @@ WeightMap_GR15
 */tmp*
 */*/temp*
 */*/tmp*
+.*.sw?
+*/.*.sw?
+*/*/.*.sw?
+*/*/*/.*.sw?

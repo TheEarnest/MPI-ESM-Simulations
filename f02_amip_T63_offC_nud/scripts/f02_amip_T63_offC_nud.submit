@@ -2,7 +2,8 @@
 #SBATCH --account=nn9385k
 #SBATCH --job-name=f02_offC_nudging_test
 #SBATCH --output=r_f02_offC_nudging_test_out_%j
-#SBATCH --time=7-0:00:00
+##SBATCH --qos=devel
+#SBATCH --time=2-0:00:00
 #SBATCH --nodes=4 --ntasks-per-node=32
 
 re_run_counter=60000

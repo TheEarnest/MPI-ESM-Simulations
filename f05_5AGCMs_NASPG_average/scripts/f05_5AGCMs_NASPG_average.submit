@@ -2,7 +2,7 @@
 #SBATCH --account=nn9385k
 #SBATCH --job-name=f05_5AGCMs_NASPG_average
 #SBATCH --output=r_f05_5AGCMs_NASPG_average_out_%j
-#SBATCH --time=0-10:00:00
+#SBATCH --time=0-8:00:00
 #SBATCH --nodes=16 --ntasks-per-node=32
 
 # 32: Natm: 171;  Noce: 168; fNatm: 3   3  19; fNoce: 2  2  2  3  7
@@ -18,7 +18,7 @@ while (( re_run_counter > 0 )); do  # year counter
   cd /cluster/work/users/earnest/mpiexm_exp/f05_5AGCMs_NASPG_average/scripts
   #echo "18590101 10" > ./f05_5AGCMs_NASPG_average.date
   ./f05_5AGCMs_NASPG_average.run
-
+  wait; sleep 60s
 done
 
 exit 

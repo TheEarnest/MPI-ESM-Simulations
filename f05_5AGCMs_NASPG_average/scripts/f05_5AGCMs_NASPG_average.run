@@ -121,7 +121,7 @@ atmvers=c2016a_180130o2          # model version (used in executable name)
 dt_write_atm=24              # time interval of output writing in hours
 lco2=false                  # true: prognostic CO2 mass mixing ratio
 nml_suf_echam=historical-LR # namelist file name suffix (in adjunct_files)
-atm_out_filetype=1          # output file format: 1=GRIB (def) / 2=NETCDF
+atm_out_filetype=2          # output file format: 1=GRIB (def) / 2=NETCDF
 atm_out_ztype=0             # file compression: 0=NONE/1=GRIB SZIP (def)/2=ZIP
 atm_restart_filetype=4      # restart file format: 4=NETCDF (def)
 #iaero=5                     # time dependent aerosol forcing (3) incl.volcanic(5)

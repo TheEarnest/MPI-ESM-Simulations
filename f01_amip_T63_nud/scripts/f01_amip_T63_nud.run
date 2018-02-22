@@ -2,7 +2,7 @@
 #SBATCH --account=nn9385k
 #SBATCH --job-name=f01_nudging_test
 #SBATCH --output=r_f01_nudging_test_out_%j
-#SBATCH --qos=devel
+###SBATCH --qos=devel
 #SBATCH --time=0-0:50:0
 #SBATCH --nodes=8 --ntasks-per-node=32
 #SBATCH --mail-type=ALL
@@ -762,7 +762,9 @@ fi
 
 #preparing nudging data 
 
-ln -sf /cluster/work/users/earnest/mpiexm_exp/WeightMap_GR15/ndg_* ${archive}/${expid}/work/
+#ln -sf /cluster/work/users/earnest/mpiexm_exp/WeightMap_GR15/ndg_* ${archive}/${expid}/work/
+#ln -sf /cluster/work/users/earnest/stercp_exp/t1SP_a9/SP_nudging/echam_nudgingData_inc/SNF_????????_??.nc ${archive}/${expid}/work/
+ln -sf /cluster/work/users/earnest/stercp_exp/t1SP_a9/SP_nudging/echam_nudgingData_const/SNF_????????_??.nc ${archive}/${expid}/work/
 
 #
 #-- restart files for ECHAM
@@ -1025,14 +1027,22 @@ cat -> namelist.echam << EOF
   NUDGSMIN      = 0
   NUDGSMAX      = 31
   LNUDGIMP      = .true.
-  NUDGD         = 31*0.579
-  NUDGT         = 31*1.16
-  NUDGV         = 31*4.63
-  NUDGP         = 1.16
+!  NUDGD         = 31*0.579
+!  NUDGT         = 31*1.16
+!  NUDGV         = 31*4.63
+!  NUDGP         = 1.16
+!!  NUDGD         = 31*0.00579
+!!  NUDGT         = 31*0.0116
+!!  NUDGV         = 31*0.0463
+!!  NUDGP         = 0.0116
+  NUDGD         = 166.6656
+  NUDGT         = 166.6656
+  NUDGV         = 166.6656
+  NUDGP         = 166.6656
   LTINTLIN        = .false.
   LDAMPLIN        = .true.
   NUDGDAMP        = 1.
-  ndg_file_nc    = "ndg_%y4%m2%d2_%h2.nc"
+  ndg_file_nc    = "SNF_%y4%m2%d2_%h2.nc"
 /
  
 EOF

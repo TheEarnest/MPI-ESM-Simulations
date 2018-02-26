@@ -1517,7 +1517,7 @@ cat -> namelist.echam << EOF
   ICH4    = ${ich4:-3}
   IN2O    = ${in2o:-3}
   ICO2    = ${ico2:-2}
-  CO2VMR  = ${co2vmr:-339.000001e-6}
+  CO2VMR  = ${co2vmr:-339.00001e-6}
   CH4VMR  = ${ch4vmr:-1.54700000e-6}
   N2OVMR  = ${n2ovmr:-0.30120000e-6}
   !CECC    = 0.0167643

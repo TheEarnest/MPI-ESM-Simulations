@@ -2,7 +2,7 @@
 #SBATCH --account=nn9385k
 #SBATCH --job-name=f05_5AGCMs_NASPG_average
 #SBATCH --output=r_f05_5AGCMs_NASPG_average_out_%j
-#SBATCH --time=2-00:00:00
+#SBATCH --time=2-0:00:00
 #SBATCH --nodes=32 --ntasks-per-node=32
 
 # 32: Natm: 171;  Noce: 168; fNatm: 3   3  19; fNoce: 2  2  2  3  7

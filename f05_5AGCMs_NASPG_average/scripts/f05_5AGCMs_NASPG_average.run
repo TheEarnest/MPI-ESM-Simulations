@@ -176,7 +176,7 @@ oce_restart_filetype=nc  # format of model restart file (ex/nc)
 #ocevers=c170415mAo3
 #ocevers=c170415mASOB
 #ocevers=c171031o2
-ocevers=c2016a_180130o2_averaging
+ocevers=c2016a_180130o2_averaging_debug
 #
 #-- HAMOCC
 #
@@ -1754,7 +1754,9 @@ cat -> OCECTL << EOF
                70,79,123,124,125,126,127,128,134,136,138,139,141,149,150,181,183,
                215,216,217,218,219,220,221,222,223,224,226,227,228,229
   IOLIST(22) = 1, '${expid}_mpiom_data_2d_dm.nc','nc2',
-               12,13,14,15,37,38,182
+               1,11,12,13,14,15,16,17,27,37,38,
+               70,79,123,124,125,126,127,128,134,136,138,139,141,149,150,181,182,183,
+               215,216,217,218,219,220,221,222,223,224,226,227,228,229
   IOLIST(23) = 1, '${expid}_mpiom_timeser_dm.nc', 'nc2',
                ${GLOBAL}, ${SECTIONS}, ${REGIONS},
                93,94,95,96,97,98,100,101,102

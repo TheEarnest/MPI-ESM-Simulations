@@ -1,0 +1,1338 @@
+###############################################################################
+#
+#      Input file for OASIS3
+# 
+#      This version is for use with ECHAM5/6 fluxes and
+#      surface conditions computed in MPIOM.
+#
+#      The file will be edited in the run-script to update it for the 
+#      actual integration period and grid dimensions.
+#
+#      Modified : S. Legutke    DKRZ             29.12.02
+#                 - updated from 2.4.t version
+#                 R. Redler     MPI-M            25.01.10
+#                 - adjusted for use with CERFACS parallel OASIS3
+#
+###############################################################################
+#  
+#      Input delimiters have to occupy position 1 to 9 !
+#      No blank lines allowed !
+#      Length of input lines <= 80 !
+#
+###############################################################################
+# 
+# SEQMODE : 1        if all models run simultaneously
+#           n        if  n  models run sequentially
+#
+ $SEQMODE
+       #Nmseq     
+ $END
+#
+###############################################################################
+#
+# CHANNEL (CHAR*4)
+#           PIPE        if named pipes + binary files are used 
+#                       for synchro and data respectively (not tested);
+#           MPI1/2      if MPI message passing is used for data exchange;
+#
+ $CHANNEL
+            #Chan
+            #Mod1procs
+            #Mod2procs  
+            #Mod2procs  
+            #Mod2procs  
+            #Mod2procs  
+            #Mod2procs  
+ $END
+#
+###############################################################################
+#
+# CALTYPE calendar type
+#
+ $CALTYPE
+            1
+ $END
+#
+###############################################################################
+#
+# NFIELDS : total number of fields being exchanged.
+#
+ $NFIELDS
+            105
+ $END
+#
+###############################################################################
+#
+# JOBNAME : acronym for the given simulation (CHAR*3)
+#          the value will be set before the actual integration
+#
+ $JOBNAME
+            #Cplexptid   
+ $END
+#
+###############################################################################
+#
+# NBMODEL : number of models and their names (CHAR*6).
+#
+ $NBMODEL
+            6 #Ocemodnam  #Atmmodnam
+ $END
+#
+###############################################################################
+# 
+# RUNTIME (<I8)
+#         total simulated time for the actual run in seconds
+#         the value will be set before the actual integration
+#
+ $RUNTIME
+           #Runtime
+ $END
+#
+###############################################################################
+#
+# INIDATE (I8)
+#         initial date of the run (YYYYMMDD)         
+#
+ $INIDATE
+             #Yyyymmdd
+ $END
+#
+###############################################################################
+# 
+# MODINFO (YES or NOT)
+#         Indicates whether a header is encapsulated within the field
+#
+ $MODINFO
+   NOT
+ $END
+#
+###############################################################################
+#
+ $NLOGPRT
+   #Nlogprt
+ $END
+#
+###############################################################################
+#
+###############################################################################
+#
+ $STRINGS
+#
+#
+###############################################################################
+#
+# Field 1 Sea_surface_temperature [K;K]
+#
+SSTOCE01 SSTATA01 1 #Dto2a  2 ssto011 #Exp
+oces at01 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a      
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 1 Sea_surface_temperature [K;K]
+#
+SSTOCE02 SSTATA02 1 #Dto2a  2 ssto021 #Exp
+oces at02 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a      
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 1 Sea_surface_temperature [K;K]
+#
+SSTOCE03 SSTATA03 1 #Dto2a  2 ssto031 #Exp
+oces at03 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a      
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 1 Sea_surface_temperature [K;K]
+#
+SSTOCE04 SSTATA04 1 #Dto2a  2 ssto041 #Exp
+oces at04 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a      
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 1 Sea_surface_temperature [K;K]
+#
+SSTOCE05 SSTATA05 1 #Dto2a  2 ssto051 #Exp
+oces at05 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a      
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 2 Sea_ice_thickness  [m;m]
+#
+SITOCE01 SITATA01 45 #Dto2a  2 ssto012  #Exp
+oces at01 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 2 Sea_ice_thickness  [m;m]
+#
+SITOCE02 SITATA02 45 #Dto2a  2 ssto022  #Exp
+oces at02 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 2 Sea_ice_thickness  [m;m]
+#
+SITOCE03 SITATA03 45 #Dto2a  2 ssto032  #Exp
+oces at03 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 2 Sea_ice_thickness  [m;m]
+#
+SITOCE04 SITATA04 45 #Dto2a  2 ssto042  #Exp
+oces at04 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 2 Sea_ice_thickness  [m;m]
+#
+SITOCE05 SITATA05 45 #Dto2a  2 ssto052  #Exp
+oces at05 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 3 Sea_ice_area_fraction  [;]
+#
+SICOCE01 SICATA01 31 #Dto2a  2 ssto013  #Exp
+oces at01 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 3 Sea_ice_area_fraction  [;]
+#
+SICOCE02 SICATA02 31 #Dto2a  2 ssto023  #Exp
+oces at02 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 3 Sea_ice_area_fraction  [;]
+#
+SICOCE03 SICATA03 31 #Dto2a  2 ssto033  #Exp
+oces at03 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 3 Sea_ice_area_fraction  [;]
+#
+SICOCE04 SICATA04 31 #Dto2a  2 ssto043  #Exp
+oces at04 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 3 Sea_ice_area_fraction  [;]
+#
+SICOCE05 SICATA05 31 #Dto2a  2 ssto053  #Exp
+oces at05 SEQ=1  LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 4 lwe_surface_snow_thickness_where_sea_ice  [m;m]
+#
+SNTOCE01 SNTATA01 46 #Dto2a  2 ssto014  #Exp
+oces at01 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 4 lwe_surface_snow_thickness_where_sea_ice  [m;m]
+#
+SNTOCE02 SNTATA02 46 #Dto2a  2 ssto024  #Exp
+oces at02 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 4 lwe_surface_snow_thickness_where_sea_ice  [m;m]
+#
+SNTOCE03 SNTATA03 46 #Dto2a  2 ssto034  #Exp
+oces at03 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 4 lwe_surface_snow_thickness_where_sea_ice  [m;m]
+#
+SNTOCE04 SNTATA04 46 #Dto2a  2 ssto044  #Exp
+oces at04 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 4 lwe_surface_snow_thickness_where_sea_ice  [m;m]
+#
+SNTOCE05 SNTATA05 46 #Dto2a  2 ssto054  #Exp
+oces at05 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 5 ocean eastw. velocity  [m/s]
+#
+OCUOCE01 OCUATA01 47 #Dto2a  2 ssto015  #Exp
+oces at01 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 5 ocean eastw. velocity  [m/s]
+#
+OCUOCE02 OCUATA02 47 #Dto2a  2 ssto025  #Exp
+oces at02 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 5 ocean eastw. velocity  [m/s]
+#
+OCUOCE03 OCUATA03 47 #Dto2a  2 ssto035  #Exp
+oces at03 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 5 ocean eastw. velocity  [m/s]
+#
+OCUOCE04 OCUATA04 47 #Dto2a  2 ssto045  #Exp
+oces at04 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 5 ocean eastw. velocity  [m/s]
+#
+OCUOCE05 OCUATA05 47 #Dto2a  2 ssto055  #Exp
+oces at05 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 6 ocean northw. velocity [m/s]
+#
+OCVOCE01 OCVATA01 48 #Dto2a  2 ssto016  #Exp
+oces at01 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 6 ocean northw. velocity [m/s]
+#
+OCVOCE02 OCVATA02 48 #Dto2a  2 ssto026  #Exp
+oces at02 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 6 ocean northw. velocity [m/s]
+#
+OCVOCE03 OCVATA03 48 #Dto2a  2 ssto036  #Exp
+oces at03 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 6 ocean northw. velocity [m/s]
+#
+OCVOCE04 OCVATA04 48 #Dto2a  2 ssto046  #Exp
+oces at04 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 6 ocean northw. velocity [m/s]
+#
+OCVOCE05 OCVATA05 48 #Dto2a  2 ssto056  #Exp
+oces at05 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR VECTOR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 7 CO2 transfer coefficient
+#
+CO2TRO01 CO2TRA01 99 #Dto2a  2 ssto017  #Exp
+oces at01 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 7 CO2 transfer coefficient
+#
+CO2TRO02 CO2TRA02 99 #Dto2a  2 ssto027  #Exp
+oces at02 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 7 CO2 transfer coefficient
+#
+CO2TRO03 CO2TRA03 99 #Dto2a  2 ssto037  #Exp
+oces at03 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 7 CO2 transfer coefficient
+#
+CO2TRO04 CO2TRA04 99 #Dto2a  2 ssto047  #Exp
+oces at04 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 7 CO2 transfer coefficient
+#
+CO2TRO05 CO2TRA05 99 #Dto2a  2 ssto057  #Exp
+oces at05 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 8 pCO2 in uppermost ocean layer [ppm CO2]
+#
+CO2OCE01 CO2ATA01 99 #Dto2a  2 ssto018  #Exp
+oces at01 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 8 pCO2 in uppermost ocean layer [ppm CO2]
+#
+CO2OCE02 CO2ATA02 99 #Dto2a  2 ssto028  #Exp
+oces at02 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 8 pCO2 in uppermost ocean layer [ppm CO2]
+#
+CO2OCE03 CO2ATA03 99 #Dto2a  2 ssto038  #Exp
+oces at03 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 8 pCO2 in uppermost ocean layer [ppm CO2]
+#
+CO2OCE04 CO2ATA04 99 #Dto2a  2 ssto048  #Exp
+oces at04 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 8 pCO2 in uppermost ocean layer [ppm CO2]
+#
+CO2OCE05 CO2ATA05 99 #Dto2a  2 ssto058  #Exp
+oces at05 SEQ=1 LAG=#Lago2a
+P  0  P  0
+#LocTrans SCRIPR
+#TimTranso2a
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+###############################################################################
+#
+# Field 9 surface_downward_eastward_stress_where_open_sea [pa;pa]
+#
+TXWATA01 TXWOCE01 50 #Dta2o  4 flxa019   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 9 surface_downward_eastward_stress_where_open_sea [pa;pa]
+#
+TXWATA02 TXWOCE02 50 #Dta2o  4 flxa029   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 9 surface_downward_eastward_stress_where_open_sea [pa;pa]
+#
+TXWATA03 TXWOCE03 50 #Dta2o  4 flxa039   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 9 surface_downward_eastward_stress_where_open_sea [pa;pa]
+#
+TXWATA04 TXWOCE04 50 #Dta2o  4 flxa049   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 9 surface_downward_eastward_stress_where_open_sea [pa;pa]
+#
+TXWATA05 TXWOCE05 50 #Dta2o  4 flxa059   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 11 surface_downward_northward_stress_where_open_sea [pa;pa]
+#
+TYWATA01 TYWOCE01 51 #Dta2o  4 flxa0111   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 11 surface_downward_northward_stress_where_open_sea [pa;pa]
+#
+TYWATA02 TYWOCE02 51 #Dta2o  4 flxa0211   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 11 surface_downward_northward_stress_where_open_sea [pa;pa]
+#
+TYWATA03 TYWOCE03 51 #Dta2o  4 flxa0311   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 11 surface_downward_northward_stress_where_open_sea [pa;pa]
+#
+TYWATA04 TYWOCE04 51 #Dta2o  4 flxa0411   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 11 surface_downward_northward_stress_where_open_sea [pa;pa]
+#
+TYWATA05 TYWOCE05 51 #Dta2o  4 flxa0511   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 13 surface_downward_eastward_stress_where_sea_ice [Pa;Pa]
+#
+TXIATA01 TXIOCE01 52  #Dta2o  4 flxa0113   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 13 surface_downward_eastward_stress_where_sea_ice [Pa;Pa]
+#
+TXIATA02 TXIOCE02 52  #Dta2o  4 flxa0213   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 13 surface_downward_eastward_stress_where_sea_ice [Pa;Pa]
+#
+TXIATA03 TXIOCE03 52  #Dta2o  4 flxa0313   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 13 surface_downward_eastward_stress_where_sea_ice [Pa;Pa]
+#
+TXIATA04 TXIOCE04 52  #Dta2o  4 flxa0413   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 13 surface_downward_eastward_stress_where_sea_ice [Pa;Pa]
+#
+TXIATA05 TXIOCE05 52  #Dta2o  4 flxa0513   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 15 surface_downward_northward_stress_where_sea_ice [pa;pa]
+#
+TYIATA01 TYIOCE01 53 #Dta2o  4 flxa0115   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 15 surface_downward_northward_stress_where_sea_ice [pa;pa]
+#
+TYIATA02 TYIOCE02 53 #Dta2o  4 flxa0215   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 15 surface_downward_northward_stress_where_sea_ice [pa;pa]
+#
+TYIATA03 TYIOCE03 53 #Dta2o  4 flxa0315   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 15 surface_downward_northward_stress_where_sea_ice [pa;pa]
+#
+TYIATA04 TYIOCE04 53 #Dta2o  4 flxa0415   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 15 surface_downward_northward_stress_where_sea_ice [pa;pa]
+#
+TYIATA05 TYIOCE05 53 #Dta2o  4 flxa0515   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR VECTOR LATITUDE 40 FRACAREA SECOND
+###############################################################################
+#
+# Field 17 lwe_surface_downward_snow_flux_where_sea_ice [m/s;m/s]
+#
+FRIATA01 FRIOCE01 55 #Dta2o  5 flxa0117   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 17 lwe_surface_downward_snow_flux_where_sea_ice [m/s;m/s]
+#
+FRIATA02 FRIOCE02 55 #Dta2o  5 flxa0217   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 17 lwe_surface_downward_snow_flux_where_sea_ice [m/s;m/s]
+#
+FRIATA03 FRIOCE03 55 #Dta2o  5 flxa0317   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 17 lwe_surface_downward_snow_flux_where_sea_ice [m/s;m/s]
+#
+FRIATA04 FRIOCE04 55 #Dta2o  5 flxa0417   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 17 lwe_surface_downward_snow_flux_where_sea_ice [m/s;m/s]
+#
+FRIATA05 FRIOCE05 55 #Dta2o  5 flxa0517   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 18 water_flux_into_ocean [m/s;m/s]
+#
+FRWATA01 FRWOCE01 29 #Dta2o  5 flxa0118   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 18 water_flux_into_ocean [m/s;m/s]
+#
+FRWATA02 FRWOCE02 29 #Dta2o  5 flxa0218   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 18 water_flux_into_ocean [m/s;m/s]
+#
+FRWATA03 FRWOCE03 29 #Dta2o  5 flxa0318   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 18 water_flux_into_ocean [m/s;m/s]
+#
+FRWATA04 FRWOCE04 29 #Dta2o  5 flxa0418   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 18 water_flux_into_ocean [m/s;m/s]
+#
+FRWATA05 FRWOCE05 29 #Dta2o  5 flxa0518   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR CONSERV
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                             GLOBAL
+###############################################################################
+#
+# Field 19 Residual heat flux (sea-ice topmelt heat flux)  [W/M^2;W/m^2]
+#
+RHIATA01 RHIOCE01 43 #Dta2o  4 flxa0119   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 19 Residual heat flux (sea-ice topmelt heat flux)  [W/M^2;W/m^2]
+#
+RHIATA02 RHIOCE02 43 #Dta2o  4 flxa0219   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 19 Residual heat flux (sea-ice topmelt heat flux)  [W/M^2;W/m^2]
+#
+RHIATA03 RHIOCE03 43 #Dta2o  4 flxa0319   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 19 Residual heat flux (sea-ice topmelt heat flux)  [W/M^2;W/m^2]
+#
+RHIATA04 RHIOCE04 43 #Dta2o  4 flxa0419   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 19 Residual heat flux (sea-ice topmelt heat flux)  [W/M^2;W/m^2]
+#
+RHIATA05 RHIOCE05 43 #Dta2o  4 flxa0519   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 20 downward_heat_flux_in_sea_ice [W/M^2;W/m^2]
+#
+CHIATA01 CHIOCE01 42 #Dta2o  4 flxa0120   #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 20 downward_heat_flux_in_sea_ice [W/M^2;W/m^2]
+#
+CHIATA02 CHIOCE02 42 #Dta2o  4 flxa0220   #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 20 downward_heat_flux_in_sea_ice [W/M^2;W/m^2]
+#
+CHIATA03 CHIOCE03 42 #Dta2o  4 flxa0320   #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 20 downward_heat_flux_in_sea_ice [W/M^2;W/m^2]
+#
+CHIATA04 CHIOCE04 42 #Dta2o  4 flxa0420   #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 20 downward_heat_flux_in_sea_ice [W/M^2;W/m^2]
+#
+CHIATA05 CHIOCE05 42 #Dta2o  4 flxa0520   #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 21 surface_downward_heat_flux_in_air [W/m**2;W/m**2]
+#
+NHWATA01 NHWOCE01 5 #Dta2o  4 flxa0121  #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 21 surface_downward_heat_flux_in_air [W/m**2;W/m**2]
+#
+NHWATA02 NHWOCE02 5 #Dta2o  4 flxa0221  #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 21 surface_downward_heat_flux_in_air [W/m**2;W/m**2]
+#
+NHWATA03 NHWOCE03 5 #Dta2o  4 flxa0321  #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 21 surface_downward_heat_flux_in_air [W/m**2;W/m**2]
+#
+NHWATA04 NHWOCE04 5 #Dta2o  4 flxa0421  #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 21 surface_downward_heat_flux_in_air [W/m**2;W/m**2]
+#
+NHWATA05 NHWOCE05 5 #Dta2o  4 flxa0521  #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 22 surface_net_downward_shortwave_flux [W/m**2;W/m**2]
+#
+SHWATA01 SHWOCE01 7  #Dta2o  4 flxa0122  #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 22 surface_net_downward_shortwave_flux [W/m**2;W/m**2]
+#
+SHWATA02 SHWOCE02 7  #Dta2o  4 flxa0222  #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 22 surface_net_downward_shortwave_flux [W/m**2;W/m**2]
+#
+SHWATA03 SHWOCE03 7  #Dta2o  4 flxa0322  #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 22 surface_net_downward_shortwave_flux [W/m**2;W/m**2]
+#
+SHWATA04 SHWOCE04 7  #Dta2o  4 flxa0422  #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 22 surface_net_downward_shortwave_flux [W/m**2;W/m**2]
+#
+SHWATA05 SHWOCE05 7  #Dta2o  4 flxa0522  #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 23 wind_speed_at_10m                  [m /s ]
+#
+WSVATA01 WSVOCE01 37  #Dta2o 4 flxa0123  #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 23 wind_speed_at_10m                  [m /s ]
+#
+WSVATA02 WSVOCE02 37  #Dta2o 4 flxa0223  #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 23 wind_speed_at_10m                  [m /s ]
+#
+WSVATA03 WSVOCE03 37  #Dta2o 4 flxa0323  #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 23 wind_speed_at_10m                  [m /s ]
+#
+WSVATA04 WSVOCE04 37  #Dta2o 4 flxa0423  #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 23 wind_speed_at_10m                  [m /s ]
+#
+WSVATA05 WSVOCE05 37  #Dta2o 4 flxa0523  #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 24 atmospheric CO2 concentration [kg/kg] (only for diagnoses)
+#
+CO2COA01 CO2CON01 99  #Dta2o 4 flxa0124  #Exp
+at01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 24 atmospheric CO2 concentration [kg/kg] (only for diagnoses)
+#
+CO2COA02 CO2CON02 99  #Dta2o 4 flxa0224  #Exp
+at02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 24 atmospheric CO2 concentration [kg/kg] (only for diagnoses)
+#
+CO2COA03 CO2CON03 99  #Dta2o 4 flxa0324  #Exp
+at03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 24 atmospheric CO2 concentration [kg/kg] (only for diagnoses)
+#
+CO2COA04 CO2CON04 99  #Dta2o 4 flxa0424  #Exp
+at04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 24 atmospheric CO2 concentration [kg/kg] (only for diagnoses)
+#
+CO2COA05 CO2CON05 99  #Dta2o 4 flxa0524  #Exp
+at05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans MASK EXTRAP SCRIPR
+#TimTransa2o
+          9999.999999e+06
+               NINENN 2 #Extrapwr 1
+                      CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+#                      BILINEAR LR SCALAR LATITUDE 40
+###############################################################################
+#
+# Field 25 CO2 flux from ocean to atmosphere (calculated in the atmosphere)
+#
+CO2FLA01 CO2FLX01 99  #Dta2o 3 flxa0125  #Exp
+al01 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans SCRIPR CONSERV
+#TimTransa2o
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                 GLOBAL
+###############################################################################
+#
+# Field 25 CO2 flux from ocean to atmosphere (calculated in the atmosphere)
+#
+CO2FLA02 CO2FLX02 99  #Dta2o 3 flxa0225  #Exp
+al02 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans SCRIPR CONSERV
+#TimTransa2o
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                 GLOBAL
+###############################################################################
+#
+# Field 25 CO2 flux from ocean to atmosphere (calculated in the atmosphere)
+#
+CO2FLA03 CO2FLX03 99  #Dta2o 3 flxa0325  #Exp
+al03 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans SCRIPR CONSERV
+#TimTransa2o
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                 GLOBAL
+###############################################################################
+#
+# Field 25 CO2 flux from ocean to atmosphere (calculated in the atmosphere)
+#
+CO2FLA04 CO2FLX04 99  #Dta2o 3 flxa0425  #Exp
+al04 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans SCRIPR CONSERV
+#TimTransa2o
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                 GLOBAL
+###############################################################################
+#
+# Field 25 CO2 flux from ocean to atmosphere (calculated in the atmosphere)
+#
+CO2FLA05 CO2FLX05 99  #Dta2o 3 flxa0525  #Exp
+al05 oces SEQ=#Iseq LAG=#Laga2o
+P  0  P  0
+#LocTrans SCRIPR CONSERV
+#TimTransa2o
+          CONSERV LR SCALAR LATITUDE 40 FRACAREA FIRST
+                 GLOBAL
+###############################################################################
+$END

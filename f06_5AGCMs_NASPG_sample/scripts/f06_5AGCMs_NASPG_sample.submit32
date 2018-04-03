@@ -1,7 +1,7 @@
 #!/bin/ksh
 #SBATCH --account=nn9385k
-#SBATCH --job-name=f06_5AGCMs_NASPG_average
-#SBATCH --output=r_f06_5AGCMs_NASPG_average_out_%j
+#SBATCH --job-name=f06_s5AGCMs_NASPG_average
+#SBATCH --output=r_f06_s5AGCMs_NASPG_average_out_%j
 #SBATCH --time=5-0:00:00
 #SBATCH --nodes=32 --ntasks-per-node=32
 

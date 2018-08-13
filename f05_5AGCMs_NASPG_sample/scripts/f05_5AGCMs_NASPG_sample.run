@@ -405,11 +405,11 @@ work=${workhome}
 #
 #-- Path to the IMDI function directory
 #
-export fpath=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/Sources/util/running/functions
+export fpath=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/util/running/functions
 #
 #-- <modelcomp>_bindir:   Directory of the model executables.
 #
-compile_path=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/Sources/fram-intel/bin
+compile_path=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/fram-intel/bin
  
 export atm_bindir=${compile_path}
 export oce_bindir=${atm_bindir}
@@ -1785,7 +1785,7 @@ echo "*    end of OCECTL"
 echo "* ----------------------------------------------------------------------"
 echo ""
 
-cp -f /nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/Sources/experiments/STERCP_JobBuilder/mpiesm_template/${WeightingMapName}  ${archive}/${expid}/work/WeightingMap4MPIOM
+cp -f /nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/experiments/STERCP_JobBuilder/mpiesm_template/${WeightingMapName}  ${archive}/${expid}/work/WeightingMap4MPIOM
 
 #
 #-- Namelist for HAMOCC

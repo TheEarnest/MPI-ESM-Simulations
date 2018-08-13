@@ -92,7 +92,7 @@ export verbose=no                # yes/no
 #
 res_atm=T63                 # grid acronym (T21/T31/T42/T63/T85/T106/T127/T159)
 vres_atm=47                 # number of vertical levels
-atmvers=c170901o2          # model version (used in executable name)
+atmvers=c180813o2_2018a          # model version (used in executable name)
 dt_write_atm=24              # time interval of output writing in hours
 lco2=false                  # true: prognostic CO2 mass mixing ratio
 nml_suf_echam=historical-LR # namelist file name suffix (in adjunct_files)
@@ -140,7 +140,7 @@ nfixYearLen=-1           #
 istart=3                 # start experiment from Levitus climatology
 oce_out_filetype=nc      # format of model output (sz/grb/ex/nc)
 oce_restart_filetype=nc  # format of model restart file (ex/nc)
-ocevers=c170901o2
+ocevers=c180813o2_2018a
 
 #
 #-- HAMOCC
@@ -155,7 +155,7 @@ nml_suf_hamocc=c5-LR     # tag for namelist (in adjunct_files)
 set_enstdif="[[ \$(echo \${startdate} | cut -c1-4) = YYYY ]] && enstdif=1.0001"
 
 
-cplversion=c170901o2
+cplversion=c180813o2_2018a
 #-- Executable name as stored in .../bin
 
 
@@ -339,8 +339,7 @@ compile_server=fram
 #          (only needs to be specified if the tasks are NOT generated on the 
 #          computing host)
 
-workhome=/cluster/work/users/earnest/mpiexm_exp
-export home=${workhome}
+export home=/cluster/work/users/earnest/mpiexm_exp
 
 #
 #-- archive_in:  Root directory of the LONG TERM INPUT data archive. It needs
@@ -349,7 +348,7 @@ export home=${workhome}
 #                several experiments, e.g. initial , forcing or restart files.
 #                The parent-directory needs to exist before job submission.
 
-export archive_in=${workhome}/restart_historical_mpiesm
+export archive_in=/cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm
 
 #
 #-- data:  Root directory of the SHORT TERM data server.
@@ -357,7 +356,7 @@ export archive_in=${workhome}/restart_historical_mpiesm
 #          this file system of the computing host
 #          The parent-directory needs to exist before job submission.
 
-export data=${workhome}
+export data=/cluster/work/users/earnest/mpiexm_exp
 
 #
 #-- archive:  Root directory of the LONG TERM OUTPUT data archive:
@@ -366,24 +365,24 @@ export data=${workhome}
 #             in ${archive} and removed from ${data}.
 #             The parent-directory needs to exist before job submission.
 
-export archive=${workhome}
+export archive=/cluster/work/users/earnest/mpiexm_exp
 
 #
 #-- work:  Root directory for the temporary working directory
 #             (for production runs use $TMPDIR on NEC)
 #
 
-work=${workhome}
+work=/cluster/work/users/earnest/mpiexm_exp
 
 #
 #-- Path to the IMDI function directory
 #
-export fpath=/nird/home/earnest/models/MPI-ESM/mpiesm-1.0.01/Sources/util/running/functions
+export fpath=/nird/home/earnest/models/MPI-ESM/mpiesm-1.0.01/util/running/functions
 
 #
 #-- <modelcomp>_bindir:   Directory of the model executables.
 #
-compile_path=/nird/home/earnest/models/MPI-ESM/mpiesm-1.0.01/Sources/fram-intel/bin
+compile_path=/nird/home/earnest/models/MPI-ESM/mpiesm-1.0.01/fram-intel/bin
  
 export atm_bindir=${compile_path}
 export oce_bindir=${atm_bindir}
@@ -999,7 +998,7 @@ prevyear=$(format_date -f4 -- ${prevdate} | cut -f1 -d" ")
 c5_cosp_request $prevyear                        $expid locosp_prev ${off:-0}
 
 #-- No COSP files generated for model revisions less than 4871
-[[ "${atm_src_revision}" -ge 4871 ]] || locosp=false
+# [[ "${atm_src_revision}" -ge 4871 ]] || locosp=false
 
 #-- No COSP files generated for mpiesm-1.0.00
 if [[ "${COSP}" = false ]]; then
@@ -1549,11 +1548,11 @@ fi
 
 #-- codes available from a certain revision only
 
-[[ ${oce_src_revision:-0} -ge 4538 && $res_mod = P ]] && {
-newCodes_2d_mm=,127,128,134,136
-newCodes_3du_mm=,6,135
-newCodes_3dw_mm=,110,111,112,214
-}
+#[[ ${oce_src_revision:-0} -ge 4538 && $res_mod = P ]] && {
+#newCodes_2d_mm=,127,128,134,136
+#newCodes_3du_mm=,6,135
+#newCodes_3dw_mm=,110,111,112,214
+#}
 
 # Global integrals/means (code range 513-519)
 GLOBAL=$( z=`seq 513 519` ; echo $z | sed 's/ /,/g;s/.{80}/&\n/g' )

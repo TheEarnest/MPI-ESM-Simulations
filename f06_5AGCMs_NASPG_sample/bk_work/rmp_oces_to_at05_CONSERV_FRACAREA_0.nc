@@ -1,0 +1,1 @@
+/cluster/work/users/earnest/mpiexm_exp/restart_historical_mpiesm/input/oasis3/rmp_oces_to_atmo_CONSERV_FRACAREA_T63_GR15.nc

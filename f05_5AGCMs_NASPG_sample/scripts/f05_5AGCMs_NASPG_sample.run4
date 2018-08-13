@@ -399,11 +399,11 @@ work=${workhome}
 #
 #-- Path to the IMDI function directory
 #
-export fpath=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/Sources/util/running/functions
+export fpath=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/util/running/functions
 #
 #-- <modelcomp>_bindir:   Directory of the model executables.
 #
-compile_path=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/Sources/fram-intel/bin
+compile_path=/nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/fram-intel/bin
  
 export atm_bindir=${compile_path}
 export oce_bindir=${atm_bindir}
@@ -1779,7 +1779,7 @@ echo "*    end of OCECTL"
 echo "* ----------------------------------------------------------------------"
 echo ""
 
-cp -f /nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/Sources/experiments/STERCP_JobBuilder/mpiesm_template/${WeightingMapName}  ${archive}/${expid}/work/WeightingMap4MPIOM
+cp -f /nird/home/earnest/models/MPI-ESM/Smpiesm-1.0/experiments/STERCP_JobBuilder/mpiesm_template/${WeightingMapName}  ${archive}/${expid}/work/WeightingMap4MPIOM
 
 #
 #-- Namelist for HAMOCC
@@ -1935,6 +1935,7 @@ outerrfile=${jobdir}/out_${expid}_err_$LID
     (( nm = nm + 1 ))
   done
 
+mail -s "`date`: Model is about to run ..." earnestshen@gmail.com <<< 'as title ...'
 
 printf "\n%s\n" " |------------------------------------------------------|"
 printf "%s\n"   " |- Model launched at \$(date)                           "
@@ -1944,8 +1945,6 @@ print "\n |-------------------------------|\n |- $(date) |"
 print " |- Launch the model ${cplmod} |\n |-------------------------------|\n"
     paffopt="--multi-prog"
   time ${MPIBIN} ${paffopt} mpmd.lst  1> ${outlogfile} 2> ${outerrfile} || {
-# aprun ${paffopt} -n 1 ./${cplexec} : ${paffopt} -n ${nprococe} ./${oceexec} : ${paffopt} -n ${nprocatm} ./${atmexec}  
-#  time aprun -n 1 -cc 0 ./${cplexec} : -n ${nprococe} -d 1 ./${oceexec} ${arg} ${atmCommStr} 1> ${outlogfile} 2> ${outerrfile}   || {
      printf "\n%s\n" " |-----------------------------------------------------|"
      printf "%s\n"   " |- ERROR in model integration                          "
      printf "%s\n"   " |- Model run aborted at \$(date)                       "

@@ -5,7 +5,7 @@
 #SBATCH --job-name=f05_mpi
 #SBATCH --output=r_f05_mpi_out_%j
 ## Wall time limit:
-#SBATCH --time=0-0:80:0
+#SBATCH --time=0-0:10:0
 ## Number of nodes and Number of tasks to start on each node:
 #SBATCH --nodes=10 --ntasks-per-node=32
 ## Set OMP_NUM_THREADS
